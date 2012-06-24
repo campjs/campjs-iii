@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         'campJS.com; */'
     },
     lint: {
-      files: []//'grunt.js', 'src/app.js', 'src/models/*.js', 'src/collections/*.js', 'src/views/*.js', 'src/router.js', 'spec/**/*.js', 'src/statechart.js']
+      files: []
     },
     coffee: {
       app: {
@@ -31,6 +31,7 @@ module.exports = function(grunt) {
               'vendor/js/underscore.js',
               'vendor/js/backbone.js',
               'vendor/js/bootstrap.js',
+              'vendor/js/stellar.js',
               'vendor/js/handlebars.runtime.js',
               'vendor/js/jquery-form.js',
         ],
@@ -101,8 +102,8 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<config:lint.files>', 'src/**'],
-      tasks: 'jade shell:handlebars shell:stylus shell:rename concat:campjs concat:css min recess'
+      files: ['<config:lint.files>', 'src/*', 'src/**'],
+      tasks: 'shell:clean jade coffee shell:rename shell:handlebars shell:stylus concat:campjs concat:css min recess'
     },
     shell: {
       handlebars: {
