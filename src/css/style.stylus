@@ -2,17 +2,20 @@
 
 y-offset = 300px
 mountain-height = 101px
-content-start = y-offset + 200px
+content-start = y-offset + 100px
 
+html
+  background: linear-gradient(top, #e0f3fa 0%, #e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
+  background-repeat: repeat-x
+  background-color: #d1dfbc
 html, body
-  height: 100%
   width: 100%
 
 body
   font-family: 'SilkscreenNormal', cursive
   color: #555
   text-shadow: -1px -1px 0px rgba(#fff, 0.3)
-  background: linear-gradient(top, #e0f3fa 0%, #e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
+  background: transparent
 
 .bg
   position: absolute
@@ -55,6 +58,6 @@ h2
 .content
   position: relative
   z-index: 1
-  top: content-start
+  margin-top: content-start
 
 
