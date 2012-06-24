@@ -103,7 +103,7 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<config:lint.files>', 'src/*', 'src/**'],
-      tasks: 'shell:clean jade coffee shell:rename shell:handlebars shell:stylus concat:campjs concat:css min:campjs min:templates'
+      tasks: 'shell:clean jade coffee shell:rename shell:handlebars shell:stylus concat:campjs concat:css min:campjs min:templates recess'
     },
     shell: {
       handlebars: {
