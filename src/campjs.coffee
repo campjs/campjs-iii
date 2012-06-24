@@ -1,6 +1,11 @@
-window.Campjs = 
+window.Campjs =
   init: ->
-    $(window).stellar()
+    $('body').stellar()
+    #{
+      #scrollProperty: 'scroll'
+      #positionProperty: 'transform'
+    #})
 $ ->
   Campjs.init()
+  console.log('transform')
 

@@ -102,7 +102,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<config:lint.files>', 'src/**'],
+      files: ['<config:lint.files>', 'src/*', 'src/**'],
       tasks: 'jade handlebars shell:stylus shell:rename concat min recess'
     },
     shell: {

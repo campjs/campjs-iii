@@ -15,17 +15,20 @@ html(lang='en')
       script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
 
   body
-    .bg.sky.repeat(data-stellar-background-ratio="0.0")
-    .bg.clouds.repeat(data-stellar-background-ratio="0.6")
-    .bg.small-mountains.repeat(data-stellar-background-ratio="0.6")
-    .bg.large-mountains(data-stellar-background-ratio="0.6")
-    .bg.monolith(data-stellar-background-ratio="0.9")
-    .container.masthead(data-stellar-background-ratio="1")
+    .bg.sky.repeat(data-stellar-ratio="0.3")
+    .bg.clouds.repeat(data-stellar-ratio="0.30")
+    .bg.small-mountains.repeat(data-stellar-ratio="0.295")
+    .bg.large-mountains(data-stellar-ratio="0.30")
+    .bg.grass.repeat(data-stellar-ratio="0.3")
+    .bg.back(data-stellar-ratio="0.38")
+    .bg.mid(data-stellar-ratio="0.42")
+    .bg.fore(data-stellar-ratio="0.44")
+    .masthead
       h1 CampJS
       h2 Gold Coast Hinterland, Australia. September 24th - 27th
-    .container.content
+    .container-fluid.content
       h2 Join us for a two day Javascript hack retreat
-      .row
+      .row-fluid
         .span4.offset4
           form
             input(type='text')
