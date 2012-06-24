@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         'campJS.com; */'
     },
     lint: {
-      files: []//'grunt.js', 'src/app.js', 'src/models/*.js', 'src/collections/*.js', 'src/views/*.js', 'src/router.js', 'spec/**/*.js', 'src/statechart.js']
+      files: []
     },
     coffee: {
       app: {
