@@ -11,31 +11,32 @@ html, body
 body
   font-family: 'Press Start 2P', cursive
   color: #555
-  background: linear-gradient(top, #e0f3fa 0%,#e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
-  
+  background: linear-gradient(top, #e0f3fa 0%, #e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
+
 .bg
   position: absolute
   top: 0
   height: 100%
   width: 100%
-  background-position-y: center
-  background-color: #e0f3fa
-.small-mountains
-  background: url('/images/small-mountains.png') repeat-x
-  background-position-x: center
   background-position-y: y-offset
-.large-mountains
-  background: url('/images/large-mountains.png')
   background-position-x: center
-  background-position-y: y-offset
-  background-repeat: no-repeat
-.monolith
-  background: url('/images/monolith.png')
-  background-position-x: center
-  background-position-y: y-offset - 130px
   background-repeat: no-repeat
 
+.repeat
+  background-repeat: repeat-x
+
+.small-mountains
+  background-image: url('/images/small-mountains.png')
+  background-position-x: center
+.large-mountains
+  background-image: url('/images/large-mountains.png')
+.monolith
+  background-image: url('/images/monolith.png')
+  background-position-y: y-offset - 130px
+.clouds
+  background-image: url('/images/clouds.png')
 .masthead
+  background-position-y: y-offset - 126px
   margin-top: 50px
   text-align: center
   
