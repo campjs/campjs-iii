@@ -2,6 +2,7 @@
 
 y-offset = 300px
 mountain-height = 101px
+content-start = y-offset + 260px
 
 html, body
   height: 100%
@@ -32,9 +33,11 @@ body
   background-position-y: y-offset - 130px
   background-repeat: no-repeat
 
-.masthead
+.masthead h1
   text-align: center
+  margin-top: 50px
+  font-size: 50px
 .content
   position: relative
   z-index: 1
-  top: y-offset
+  top: content-start
