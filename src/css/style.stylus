@@ -8,6 +8,7 @@ html, body
   width: 100%
 
 body
+  font-family: 'Press Start 2P', cursive
   background: linear-gradient(top, #e0f3fa 0%,#e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
 .bg
   position: absolute
