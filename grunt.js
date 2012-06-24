@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         src: ['<banner:meta.banner>',
               'vendor/css/bootstrap.css',
               'vendor/css/bootstrap.responsive.css',
-              'public/css/style.stylus.css'
+              'public/css/*.stylus.css'
         ],
         dest: 'public/css/screen.css'
       }
