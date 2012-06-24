@@ -11,6 +11,7 @@ html, body
 body
   font-family: 'SilkscreenNormal', cursive
   color: #555
+  text-shadow: -1px -1px 0px rgba(#fff, 0.3)
   background: linear-gradient(top, #e0f3fa 0%, #e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
 
 .bg
@@ -35,7 +36,7 @@ body
   background-position-y: y-offset - 130px
 .clouds
   background-image: url('/images/clouds.png')
-  background-position-y: y-offset - 126px
+  background-position-y: y-offset - 40px
 .masthead
   margin-top: 70px
   text-align: center
