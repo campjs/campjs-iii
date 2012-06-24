@@ -1,0 +1,39 @@
+@import 'nib'
+
+y-offset = 300px
+mountain-height = 101px
+
+html, body
+  height: 100%
+  width: 100%
+
+body
+  background: linear-gradient(top, #e0f3fa 0%,#e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
+.bg
+  position: absolute
+  top: 0
+  height: 100%
+  width: 100%
+  background-position-y: center
+  background-color: #e0f3fa
+.small-mountains
+  background: url('/images/small-mountains.png') repeat-x
+  background-position-x: center
+  background-position-y: y-offset
+.large-mountains
+  background: url('/images/large-mountains.png')
+  background-position-x: center
+  background-position-y: y-offset
+  background-repeat: no-repeat
+.monolith
+  background: url('/images/monolith.png')
+  background-position-x: center
+  background-position-y: y-offset - 130px
+  background-repeat: no-repeat
+
+.masthead
+  text-align: center
+.content
+  position: relative
+  z-index: 1
+  top: y-offset

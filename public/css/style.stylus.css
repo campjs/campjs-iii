@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e0f3fa), color-stop(4.01, #e0f3fa), color-stop(4.02, #d1dfbc), color-stop(1, #d1dfbc));
+  background: -webkit-linear-gradient(top, #e0f3fa 0%, #e0f3fa 401px, #d1dfbc 402px, #d1dfbc 100%);
+  background: -moz-linear-gradient(top, #e0f3fa 0%, #e0f3fa 401px, #d1dfbc 402px, #d1dfbc 100%);
+  background: -o-linear-gradient(top, #e0f3fa 0%, #e0f3fa 401px, #d1dfbc 402px, #d1dfbc 100%);
+  background: -ms-linear-gradient(top, #e0f3fa 0%, #e0f3fa 401px, #d1dfbc 402px, #d1dfbc 100%);
+  background: linear-gradient(top, #e0f3fa 0%, #e0f3fa 401px, #d1dfbc 402px, #d1dfbc 100%);
+}
+.bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-position-y: center;
+  background-color: #e0f3fa;
+}
+.small-mountains {
+  background: url("/images/small-mountains.png") repeat-x;
+  background-position-x: center;
+  background-position-y: 300px;
+}
+.large-mountains {
+  background: url("/images/large-mountains.png");
+  background-position-x: center;
+  background-position-y: 300px;
+  background-repeat: no-repeat;
+}
+.monolith {
+  background: url("/images/monolith.png");
+  background-position-x: center;
+  background-position-y: 170px;
+  background-repeat: no-repeat;
+}
+.masthead {
+  text-align: center;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  top: 300px;
+}
