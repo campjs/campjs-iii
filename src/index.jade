@@ -13,15 +13,17 @@ html(lang='en')
     link(href='http://fonts.googleapis.com/css?family=Press+Start+2P',rel='stylesheet',type='text/css')
     //if lt IE 9
       script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+
   body
-    .bg.clouds.repeat
-    .bg.small-mountains.repeat
-    .bg.large-mountains
-    .bg.monolith
-    .container.masthead
+    .bg.sky.repeat(data-stellar-background-ratio="0.0")
+    .bg.clouds.repeat(data-stellar-background-ratio="0.6")
+    .bg.small-mountains.repeat(data-stellar-background-ratio="0.6")
+    .bg.large-mountains(data-stellar-background-ratio="0.6")
+    .bg.monolith(data-stellar-background-ratio="0.9")
+    .container.masthead(data-stellar-background-ratio="1")
       h1 CampJS
       h2 Gold Coast Hinterland, Australia. September 24th - 27th
-    .container.content    
+    .container.content
       h2 Join us for a two day Javascript hack retreat
       .row
         .span4.offset4

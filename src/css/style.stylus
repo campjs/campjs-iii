@@ -16,6 +16,7 @@ body
   color: #555
   text-shadow: -1px -1px 0px rgba(#fff, 0.3)
   background: transparent
+  min-height: 2000px
 
 .bg
   position: absolute
@@ -25,10 +26,12 @@ body
   background-position-y: y-offset
   background-position-x: center
   background-repeat: no-repeat
-
+  overflow: visible
 .repeat
   background-repeat: repeat-x
-
+.sky
+  background-color: #e0f3fa
+  height: 501px
 .small-mountains
   background-image: url('/images/small-mountains.png')
   background-position-x: center

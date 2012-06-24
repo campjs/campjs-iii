@@ -31,6 +31,7 @@ module.exports = function(grunt) {
               'vendor/js/underscore.js',
               'vendor/js/backbone.js',
               'vendor/js/bootstrap.js',
+              'vendor/js/stellar.js',
               'vendor/js/handlebars.runtime.js',
               'vendor/js/jquery-form.js',
         ],
