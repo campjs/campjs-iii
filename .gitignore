@@ -16,4 +16,5 @@ npm-debug.log
 .DS_Store
 
 public/css/
+public/js/*
 public/index.html
