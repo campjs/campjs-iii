@@ -3,11 +3,11 @@
   "name": "campjs-frontend",
   "version": "0.0.0",
   "dependencies": {
-    "grunt-handlebars": "0.0.4",
     "grunt-recess": "~0.1.0",
     "grunt-coffee": "0.0.2",
     "grunt-jade": "~0.3.1",
     "grunt-shell": "~0.1.1",
+    "handlebars": "~1.0.5beta",
     "nib": "~0.5.0",
     "stylus": "~0.27.2"
   },

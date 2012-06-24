@@ -78,12 +78,12 @@ module.exports = function(grunt) {
         }
       }
     },
-    handlebars: {
-      all: {
-        src: 'public/templates/*.handlebars',
-        dest: 'public/js/templates.js'
-      }
-    },
+    // handlebars: {
+    //   all: {
+    //     src: 'public/templates',
+    //     dest: 'public/js/templates.js'
+    //   }
+    // },
     jade: {
       all: {
         src: 'src/templates/*.jade',
@@ -102,9 +102,12 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<config:lint.files>', 'src/**'],
-      tasks: 'jade handlebars shell:stylus shell:rename concat min recess'
+      tasks: 'jade shell:handlebars shell:stylus shell:rename concat:campjs concat:css min recess'
     },
     shell: {
+      handlebars: {
+        command: './node_modules/.bin/handlebars public/templates/ -f public/js/templates.js'
+      },
       stylus: {
         command: './node_modules/.bin/stylus --use nib ./src/css/*.stylus -o ./public/css/'
       },
@@ -120,13 +123,12 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-handlebars');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-jade');
   grunt.loadNpmTasks('grunt-coffee');
   grunt.loadNpmTasks('grunt-shell');
 
   // Default task.
-  grunt.registerTask('default', 'jade coffee shell:clean handlebars shell:stylus shell:rename concat min recess');
+  grunt.registerTask('default', 'shell:clean jade coffee shell:rename shell:handlebars shell:stylus concat min recess');
 
 };
