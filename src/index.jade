@@ -25,12 +25,62 @@ html(lang='en')
     .masthead
       h1 CampJS
       h2 Gold Coast Hinterland, Australia. September 24th - 27th
-    .container-fluid.content
-      h2 Join us for a two day Javascript hack retreat
-      .row-fluid
+    .container.content(data-stellar-ratio="0.46")
+      .row
         .span4.offset4
-          form
-            input(type='text')
+          h2 Join us for a weekend-long Javascript hack retreat.
+      .row
+        .span4.offset4
+          form.register(method="POST", action="http://campjs.nodejitsu.com/register")
+            .input-append
+                input.details.span2(size='16', type='text', name='details')
+                input.btn(type='submit', value="Get Notified!")
+          .message
+            p More details will be released soon.
+
+      .row
+        .span6.offset3
+          h2.
+            CAMPJS starts on Friday Night, September 24 ends Monday Morning the 27th.
+      .row
+        .span4.offset3
+          h3 Free
+          ul
+            li Food
+            li Accomodation
+            li Alcohol
+            li Advice
+        .span4
+          h3 Where/When?
+          p
+            Gold Coast Hinterland Australia,
+            September 24 ends Monday Morning the 27th
+      .row
+        .span6.offset3
+          h2 Workshops
+        .span4.offset3
+          h3 Client
+          ul
+            li Backbone
+            li Ember
+            li AngularJS
+            li JQuery
+            li Build Tools
+            li Testing
+        .span4
+          h3 Server
+          ul
+            li NodeJS 101
+            li Express
+            li Flatiron
+            li Testing
+            li Web Sockets
+            li Scaling
+      .footer.row
+        h1 CampJS
+        h2 Gold Coast Hinterland, Australia. September 24th - 27th
+
+
     script(src='/js/libs.min.js')
     script(src='/js/templates.min.js')
     script(src='/js/campjs.min.js')

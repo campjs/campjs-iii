@@ -13,10 +13,14 @@ html, body
 
 body
   font-family: 'SilkscreenNormal', cursive
-  color: #4a4a4a
+  color: #555
   text-shadow: -1px -1px 0px rgba(#fff, 0.6)
   background: transparent
+  padding-bottom: 200px
   min-height: 2000px
+
+p
+  font-family: 'SilkscreenNormal', cursive
 
 .bg
   position: absolute
@@ -27,12 +31,19 @@ body
   background-repeat: no-repeat
   overflow: visible
   z-index: 10
+
+div[data-stellar-ratio]
+  -webkit-backface-visibility: hidden
+  -webkit-perspective: 10000
+
 .repeat
   background-repeat: repeat-x
+
 .sky
+  position: fixed
   background-color: #e0f3fa
   background-attachment: fixed
-  height: 301px
+  height: 400px
 .grass
   background-color: #d1dfbc
   background-attachment: fixed
@@ -59,7 +70,6 @@ body
 .back, .mid, .fore
   z-index: 13
   margin-top: 180px
-  //height: 392px
 .back
   background-image: url('/images/back.png')
 .mid
@@ -69,30 +79,33 @@ body
   background-image: url('/images/fore.png')
   margin-top: 340px
 
-
-.masthead
+.masthead, .footer
   width: 100%
-  top: 0
-  margin-top: 60px
   text-align: center
-  position: absolute
-  z-index: 11
-  position: fixed
   h1
     font-size: 140px
-
   h2
     margin: 20px 0 0
 
+.masthead
+  top: 0
+  margin-top: 60px
+  position: absolute
+  z-index: 11
+  position: fixed
+.footer
+  margin-top: 100px
 h1
   font-size: 60px
 
-h2 
+h2
   font-size: 16px
 
 .content
-  text-align: center
-  position: fixed
+  background-color: #d1dfbc
+  h2
+    text-align: center
+  position: relative
   z-index: 15
-  margin-top: 500px
+  margin-top: 600px
 
