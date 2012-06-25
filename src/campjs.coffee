@@ -20,14 +20,17 @@ window.Campjs =
         $('.message').html('Success')
       error: ->
         $('.message').html('Fail')
-    
+
     animateClouds = ->
       clouds = $('.clouds')
-      
-      clouds.animate { 'background-position-x': 1367 }, 350000, 'linear', ->
+      direction = 1
+      if Math.round(Math.random())
+        direction = -1
+      console.log('direction', direction)
+      clouds.animate { 'background-position-x': direction * 1367 }, 350000, 'linear', ->
         clouds.css 'background-position-x', 0
         animateClouds()
-    
+
     animateClouds()
     
 $ ->
