@@ -24,7 +24,7 @@ window.Campjs =
     animateClouds = ->
       clouds = $('.clouds')
       
-      clouds.animate { 'background-position-x': 1367 }, 45000, 'linear', ->
+      clouds.animate { 'background-position-x': 1367 }, 350000, 'linear', ->
         clouds.css 'background-position-x', 0
         animateClouds()
     
