@@ -43,7 +43,7 @@ div[data-stellar-ratio]
   position: fixed
   background-color: #e0f3fa
   background-attachment: fixed
-  height: 400px
+  height: 450px
 .grass
   background-color: #d1dfbc
   background-attachment: fixed
