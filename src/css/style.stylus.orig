@@ -1,0 +1,67 @@
+@import 'nib'
+
+y-offset = 300px
+mountain-height = 101px
+content-start = y-offset + 100px
+
+html
+  background: linear-gradient(top, #e0f3fa 0%, #e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
+  background-repeat: repeat-x
+  background-color: #d1dfbc
+html, body
+  width: 100%
+
+body
+  font-family: 'SilkscreenNormal', cursive
+  color: #555
+<<<<<<< Updated upstream
+  text-shadow: -1px -1px 0px rgba(#fff, 0.3)
+  background: linear-gradient(top, #e0f3fa 0%, #e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
+=======
+  background: transparent
+>>>>>>> Stashed changes
+
+.bg
+  position: absolute
+  top: 0
+  height: 100%
+  width: 100%
+  background-position-y: y-offset
+  background-position-x: center
+  background-repeat: no-repeat
+
+.repeat
+  background-repeat: repeat-x
+
+.small-mountains
+  background-image: url('/images/small-mountains.png')
+  background-position-x: center
+.large-mountains
+  background-image: url('/images/large-mountains.png')
+.monolith
+  background-image: url('/images/monolith.png')
+  background-position-y: y-offset - 130px
+.clouds
+  background-image: url('/images/clouds.png')
+  background-position-y: y-offset - 40px
+.masthead
+  margin-top: 70px
+  text-align: center
+  h1
+    font-size: 140px
+
+  h2
+    margin: 20px 0 0
+
+h1
+  font-size: 60px
+
+h2 
+  font-size: 16px
+
+.content
+  position: relative
+  z-index: 1
+  margin-top: content-start
+
+

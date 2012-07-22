@@ -1,5 +1,20 @@
 window.Campjs =
   init: ->
+<<<<<<< HEAD
+    $('body').stellar()
+    
+    animateClouds = ->
+      clouds = $('.clouds')
+      
+      clouds.animate { 'background-position-x': 1367 }, 45000, 'linear', ->
+        clouds.css 'background-position-x', 0
+        animateClouds()
+    
+    animateClouds()
+    
+$ ->
+  Campjs.init()
+=======
     if ($.browser.webkit)
       $('body').stellar
         positionProperty: 'transform'
@@ -21,17 +36,6 @@ window.Campjs =
       error: ->
         $('.message').html('Fail')
 
-    #animateClouds = ->
-      #clouds = $('.clouds')
-      #direction = 1
-      #if Math.round(Math.random())
-        #direction = -1
-      #clouds.transition { 'sition-x': direction * 1367 }, 35000, 'linear', ->
-        #clouds.css 'background-position-x', 0
-        #animateClouds()
-
-    #animateClouds()
-    
 $ ->
   `
   var vendorPrefix = (function() {
@@ -46,6 +50,7 @@ $ ->
     } else if ($.browser.msie) {
       prefix = '-ms-';
     }
+>>>>>>> 5d80e12... Fix parallax, setup basic info, form submissions and styling
 
     return prefix;
   }());

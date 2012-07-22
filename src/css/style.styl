@@ -1,27 +1,25 @@
 @import 'nib'
+@import './fonts'
 
 y-offset = 300px
 mountain-height = 101px
 content-start = y-offset + 100px
 
 html
-  //background: linear-gradient(top, #e0f3fa 0%, #e0f3fa y-offset + mountain-height,#d1dfbc y-offset + mountain-height + 1,#d1dfbc 100%)
   background-repeat: repeat-x
   background-color: #d1dfbc
 html, body
   width: 100%
-
 body
-  font-family: 'SilkscreenNormal', cursive
+  font-family: 'Lato', 'Helvetica', sans-serif
   color: #555
-  text-shadow: -1px -1px 0px rgba(#fff, 0.6)
+  text-shadow: -1px -1px 0px rgba(#DDD, 0.3)
   background: transparent
-  padding-bottom: 200px
-  min-height: 2000px
-
-p
-  font-family: 'SilkscreenNormal', cursive
-
+  padding-bottom: 0px
+  min-width: 1024px
+  ul
+    li
+      font-size: 110%
 .bg
   position: absolute
   top: 0
@@ -82,11 +80,19 @@ div[data-stellar-ratio]
 .masthead, .footer
   width: 100%
   text-align: center
+  font-family: 'SilkscreenNormal', monospace
   h1
-    font-size: 140px
+    font-family: 'Shakagraphics', monospace
+    font-weight: normal;
+    text-transform: uppercase
+    font-size: 135px
+    display: inline
   h2
-    margin: 20px 0 0
-
+    margin: 0px 0 0
+    font-size: 15.3px
+    display: block
+.row
+  margin-bottom: 25px
 .masthead
   top: 0
   margin-top: 60px
@@ -94,18 +100,33 @@ div[data-stellar-ratio]
   z-index: 11
   position: fixed
 .footer
-  margin-top: 100px
-h1
-  font-size: 60px
-
-h2
-  font-size: 16px
-
-.content
   background-color: #d1dfbc
+  margin-top: 40px
+  position: relative
+  top: -1px
+  z-index: 15
+  padding-bottom: 100px
+.promo
   h2
-    text-align: center
+    font-size: 2em
+.topics
+  ul
+    margin: 0
+  li
+    float: left
+    list-style-type: none
+    margin: 3px
+    font-size: 105%
+
+.authors
+  padding-left: 90px
+.content
+  .promo
+    h3, h4
+      letter-spacing: -1px
+  background-color: #d1dfbc
   position: relative
   z-index: 15
   margin-top: 650px
+
 

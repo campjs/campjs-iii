@@ -34,6 +34,7 @@ module.exports = function(grunt) {
               'vendor/js/stellar.js',
               'vendor/js/handlebars.runtime.js',
               'vendor/js/jquery-form.js',
+              'vendor/js/transit.js'
         ],
         dest: 'public/js/libs.js'
       },
@@ -50,7 +51,7 @@ module.exports = function(grunt) {
         src: ['<banner:meta.banner>',
               'vendor/css/bootstrap.css',
               'vendor/css/bootstrap.responsive.css',
-              'public/css/*.stylus.css'
+              'public/css/style.css'
         ],
         dest: 'public/css/screen.css'
       }
@@ -79,12 +80,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    // handlebars: {
-    //   all: {
-    //     src: 'public/templates',
-    //     dest: 'public/js/templates.js'
-    //   }
-    // },
+
     jade: {
       all: {
         src: 'src/templates/*.jade',
@@ -103,18 +99,21 @@ module.exports = function(grunt) {
     },
     watch: {
       files: ['<config:lint.files>', 'src/*', 'src/**'],
-      tasks: 'shell:clean jade coffee shell:rename shell:handlebars shell:stylus concat:campjs concat:css min:campjs min:templates recess'
+      tasks: 'jade coffee shell:rename shell:stylus concat:campjs concat:css min:campjs min:templates recess'
     },
     shell: {
-      handlebars: {
-        command: './node_modules/.bin/handlebars public/templates/ -f public/js/templates.js'
+      _options: {
+        failOnError: true
       },
+      //handlebars: {
+        //command: './node_modules/.bin/handlebars public/templates/ -f public/js/templates.js'
+      //},
       stylus: {
-        command: './node_modules/.bin/stylus --use nib ./src/css/*.stylus -o ./public/css/'
+        command: './node_modules/.bin/stylus --use nib ./src/css/*.styl -o ./public/css/'
       },
-      clean: {
-        command: 'rm public/templates/*.handlebars'
-      },
+      //clean: {
+        //command: 'rm public/templates/*.handlebars'
+      //},
       rename: {
         command: 'for file in ./public/templates/*.html\n\
           do \n\
@@ -130,6 +129,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
 
   // Default task.
-  grunt.registerTask('default', 'shell:clean jade coffee shell:rename shell:handlebars shell:stylus concat min recess');
+  grunt.registerTask('default', 'jade coffee shell:rename shell:stylus concat min recess');
 
 };

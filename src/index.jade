@@ -6,79 +6,85 @@ html(lang='en')
     title CampJS
     meta(name='description', content='')
     meta(name='author', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
     link(rel='shortcut icon', href='/favicon.ico')
     link(rel='apple-touch-icon', href='/apple-touch-icon.png')
     link(rel='stylesheet', href='/css/screen.min.css?v=3')
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,900', rel='stylesheet', type='text/css')
     //if lt IE 9
       script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
 
   body
-    .bg.sky.repeat(data-stellar-ratio="0.3")
-    .bg.clouds.repeat(data-stellar-ratio="0.30")
-    .bg.small-mountains.repeat(data-stellar-ratio="0.295")
-    .bg.large-mountains(data-stellar-ratio="0.30")
-    .bg.grass.repeat(data-stellar-ratio="0.3")
-    .bg.back(data-stellar-ratio="0.38")
-    .bg.mid(data-stellar-ratio="0.42")
-    .bg.fore(data-stellar-ratio="0.44")
+    .bg.sky.repeat(data-stellar-ratio="0.75")
+    .bg.clouds.repeat(data-stellar-ratio="0.75")
+    .bg.small-mountains.repeat(data-stellar-ratio="0.78")
+    .bg.large-mountains(data-stellar-ratio="0.79")
+    .bg.grass.repeat(data-stellar-ratio="0.8")
+    .bg.back(data-stellar-ratio="0.85")
+    .bg.mid(data-stellar-ratio="0.92")
+    .bg.fore(data-stellar-ratio="0.97")
     .masthead
       h1 CampJS
       h2 Gold Coast Hinterland, Australia. September 24th - 27th
-    .container.content(data-stellar-ratio="0.46")
+    .container.content
       .row
-        .span4.offset4
+        .span8.offset2.promo
           h2 Join us for a weekend-long Javascript hack retreat.
       .row
-        .span4.offset4
+        .span6.offset3
           form.register(method="POST", action="http://campjs.nodejitsu.com/register")
             .input-append
-                input.details.span2(size='16', type='text', name='details')
-                input.btn(type='submit', value="Get Notified!")
-          .message
-            p More details will be released soon.
+              input.details.span4(size='16', type='text', name='details', placeholder='email or twitter')
+              input.btn.btn-inverse(type='submit', value="Register Interest!")
+            .message
+              p
 
       .row
-        .span4.offset3
-          h3 Included with Ticket
+        .span4.offset2
+          h3 Details:
+          ul
+            li Gold Coast Hinterland, Queensland, Australia
+            li <strong>Start</strong>: Friday Afternoon, October 19th
+            li <strong>End</strong>: Monday Morning, October 22nd
+            li <strong>Price</strong>: approx. $350 (TBA)
+          h4 More details to be released soon.
+        .span4
+          h3 Included with Ticket:
           ul
             li Food
             li Comfortable Sleeping Quarters (Not Tents)
             li Alcohol
             li Power
             li Talks
-        .span4
-          h3 Details
-          ul
-            li Gold Coast Hinterland, Queensland, Australia
-            li Start: Friday Afternoon, October 19th
-            li End: Monday Morning, October 22nd
-            li Price: approx. $350 (TBA)
-      .row
-        .span6.offset3
-          h2 Workshops
-        .span4.offset3
-          h3 Client
-          ul
-            li Backbone
-            li Ember
-            li AngularJS
-            li JQuery
-            li Build Tools
-            li Testing
-        .span4
-          h3 Server
-          ul
-            li NodeJS 101
-            li Express
-            li Flatiron
-            li Testing
-            li Web Sockets
-            li Scaling
-      .footer.row
-        h1 CampJS
-        h2 Gold Coast Hinterland, Australia. September 24th - 27th
 
+      .row.topics
+        .span8.offset2
+          h2 Topics:
+        .span8.offset2
+          ul
+            li.label.label-info Backbone
+            li.label.label-info Ember
+            li.label.label-info Angular
+            li.label.label-info JQuery
+            li.label.label-info Underscore
+            li.label.label-info Mustache
+            li.label.label-info NodeJS
+            li.label.label-info Express
+            li.label.label-info Flatiron
+            li.label.label-info Streams
+            li.label.label-info Web Sockets
+            li.label.label-info Deployment
+            li.label.label-info Testing
+            li.label.label-info NoSQL
+            li.label.label-info CoffeeScript
+            li.label.label-info Functional
+            li.label.label-info Architecture
+            li.label.label-info Scaling
+    .footer.row
+      img(src="/images/logo.png")
+      .authors
+        :markdown
+          By [Tim Oxley](http://twitter.com/secoif") and [Nigel Rausch](http://twitter.com/nr99)
 
     script(src='/js/libs.min.js')
     script(src='/js/templates.min.js')
