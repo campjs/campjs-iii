@@ -1,0 +1,269 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+@font-face {
+  font-family: 'SilkscreenNormal';
+  src: url("/fonts/slkscr-webfont.eot");
+  src: url("/fonts/slkscr-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/slkscr-webfont.woff") format('woff'), url("/fonts/slkscr-webfont.ttf") format('truetype'), url("/fonts/slkscr-webfont.svg#SilkscreenNormal") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SilkscreenBold';
+  src: url("/fonts/slkscrb-webfont.eot");
+  src: url("/fonts/slkscrb-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/slkscrb-webfont.woff") format('woff'), url("/fonts/slkscrb-webfont.ttf") format('truetype'), url("/fonts/slkscrb-webfont.svg#SilkscreenBold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SilkscreenExpandedNormal';
+  src: url("/fonts/slkscre-webfont.eot");
+  src: url("/fonts/slkscre-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/slkscre-webfont.woff") format('woff'), url("/fonts/slkscre-webfont.ttf") format('truetype'), url("/fonts/slkscre-webfont.svg#SilkscreenExpandedNormal") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SilkscreenExpandedBold';
+  src: url("/fonts/slkscreb-webfont.eot");
+  src: url("/fonts/slkscreb-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/slkscreb-webfont.woff") format('woff'), url("/fonts/slkscreb-webfont.ttf") format('truetype'), url("/fonts/slkscreb-webfont.svg#SilkscreenExpandedBold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SG1212';
+  src: url("/fonts/sg12-webfont.eot");
+  src: url("/fonts/sg12-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/sg12-webfont.woff") format('woff'), url("/fonts/sg12-webfont.ttf") format('truetype'), url("/fonts/sg12-webfont.svg#SG1212") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  background-repeat: repeat-x;
+  background-color: #d1dfbc;
+}
+html,
+body {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  html html,
+  body html,
+  html body,
+  body body {
+    width: auto;
+  }
+}
+body {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  color: #555;
+  text-shadow: -1px -1px 0px rgba(221,221,221,0.3);
+  background: #d1dfbc;
+  padding-bottom: 0px;
+}
+body ul li {
+  font-size: 110%;
+}
+@media (max-width: 640px) {
+  body h3 {
+    margin-top: 20px;
+  }
+}
+.bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  overflow: visible;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .bg {
+    left: -20px;
+    width: auto;
+    right: 0px;
+    -webkit-background-size: 140%;
+    background-size: 140%;
+  }
+}
+div[data-stellar-ratio] {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 10000;
+}
+.repeat {
+  background-repeat: repeat-x;
+}
+.sky {
+  position: fixed;
+  background-color: #e0f3fa;
+  background-attachment: fixed;
+}
+@media (max-width: 640px) {
+  .sky {
+    position: absolute;
+    top: 0;
+  }
+}
+.grass {
+  background-color: #d1dfbc;
+  background-attachment: fixed;
+  margin-top: 301px;
+  z-index: 13;
+}
+@media (max-width: 640px) {
+  .grass {
+    margin-top: 240px;
+  }
+}
+.clouds {
+  background-image: url("/images/clouds.png");
+  margin-top: 160px;
+  background-position: -300px 0;
+}
+@media (max-width: 640px) {
+  .clouds {
+    margin-top: 190px;
+  }
+}
+.small-mountains {
+  background-image: url("/images/small-mountains.png");
+  height: 101px;
+  margin-top: 200px;
+  z-index: 12;
+}
+@media (max-width: 640px) {
+  .small-mountains {
+    margin-top: 206px;
+  }
+}
+.large-mountains {
+  background-image: url("/images/large-mountains.png");
+  height: 101px;
+  margin-top: 200px;
+  z-index: 12;
+}
+.back,
+.mid,
+.fore {
+  z-index: 13;
+  margin-top: 180px;
+}
+.back {
+  background-image: url("/images/back.png");
+}
+@media (max-width: 640px) {
+  .back {
+    margin-top: 155px;
+  }
+}
+.mid {
+  background-image: url("/images/mid.png");
+  margin-top: 180px;
+}
+@media (max-width: 640px) {
+  .mid {
+    margin-top: 160px;
+  }
+}
+.fore {
+  background-image: url("/images/fore.png");
+  margin-top: 340px;
+}
+@media (max-width: 640px) {
+  .fore {
+    margin-top: 210px;
+  }
+}
+.masthead,
+.footer {
+  width: 100%;
+  text-align: center;
+  font-family: 'SilkscreenNormal', monospace;
+}
+@media (max-width: 640px) {
+  .masthead,
+  .footer {
+    width: auto;
+  }
+}
+.masthead h1,
+.footer h1 {
+  font-family: 'SG1212', monospace;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 135px;
+  display: inline;
+}
+@media (max-width: 640px) {
+  .masthead h1,
+  .footer h1 {
+    font-size: 60px;
+  }
+  .masthead h2,
+  .footer h2 {
+    font-size: 10px;
+    line-height: 14px;
+    display: inline;
+  }
+}
+.masthead h2,
+.footer h2 {
+  margin: 0px 0 0;
+  font-size: 15.3px;
+  display: block;
+}
+.row {
+  margin-bottom: 25px;
+}
+.masthead {
+  top: 0;
+  margin-top: 60px;
+  position: absolute;
+  z-index: 11;
+  position: fixed;
+}
+.footer {
+  background-color: #d1dfbc;
+  padding-top: 40px;
+  position: relative;
+  top: -1px;
+  z-index: 15;
+  padding-bottom: 100px;
+  margin-bottom: 0px;
+}
+.sheep {
+  text-align: right;
+}
+.sheep img {
+  position: relative;
+  top: 0px;
+}
+.promo h2 {
+  font-size: 3.1em;
+  text-align: center;
+}
+.topics ul {
+  margin: 0;
+}
+.topics li {
+  float: left;
+  list-style-type: none;
+  margin: 3px;
+  font-size: 105%;
+}
+.authors {
+  padding-left: 90px;
+}
+.content {
+  background-color: #d1dfbc;
+  position: relative;
+  z-index: 15;
+  margin-top: 650px;
+}
+.content .promo h3,
+.content .promo h4 {
+  letter-spacing: -1px;
+}
+@media (max-width: 640px) {
+  .content {
+    margin-top: 340px;
+  }
+}
