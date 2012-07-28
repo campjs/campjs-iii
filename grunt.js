@@ -34,7 +34,8 @@ module.exports = function(grunt) {
               'vendor/js/stellar.js',
               'vendor/js/handlebars.runtime.js',
               'vendor/js/jquery-form.js',
-              'vendor/js/transit.js'
+              'vendor/js/transit.js',
+              'vendor/js/iealert.js'
         ],
         dest: 'public/js/libs.js'
       },
