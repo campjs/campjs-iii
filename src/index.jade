@@ -3,16 +3,16 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title CampJS
+    title CAMPJS: Javascript hack retreat for node.js and web-application developers.
     meta(name='description', content='')
     meta(name='author', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='shortcut icon', href='/favicon.ico')
-    link(rel='apple-touch-icon', href='/apple-touch-icon.png')
-    link(rel='stylesheet', href='/css/screen.min.css?v=3')
+    link(rel='stylesheet', href='/css/screen.css?v=3')
     link(href='http://fonts.googleapis.com/css?family=Lato:400,900', rel='stylesheet', type='text/css')
     //if lt IE 9
       script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+      link(rel='stylesheet', href='/vendor/iealert.css?v=3')
 
   body
     .bg.sky.repeat(data-stellar-ratio="0.75")
@@ -24,67 +24,72 @@ html(lang='en')
     .bg.mid(data-stellar-ratio="0.92")
     .bg.fore(data-stellar-ratio="0.97")
     .masthead
-      h1 CampJS
-      h2 Gold Coast Hinterland, Australia. September 24th - 27th
-    .container.content
-      .row
-        .span8.offset2.promo
-          h2 Join us for a weekend-long Javascript hack retreat.
-      .row
-        .span6.offset3
-          form.register(method="POST", action="http://campjs.nodejitsu.com/register")
-            .input-append
-              input.details.span4(size='16', type='text', name='details', placeholder='email or twitter')
-              input.btn.btn-inverse(type='submit', value="Register Interest!")
-            .message
-              p
+      h1 CAMPJS
+      h2 Gold Coast Hinterland, Australia. October&nbsp;19th&nbsp;&mdash;&nbsp;22nd
+    .content
+      .container
+        .row
+          .span12.promo
+            h2 Join us for a weekend-long Javascript hack retreat.
+        .row
+          .span4.offset1.sheep
+            p
+              img(src="/images/sheep.png")
+          .span5
+            form.register(method="POST", action="http://campjs.nodejitsu.com/register")
+              .input-append
+                input.details.span3(size='16', type='text', name='details', placeholder='email or twitter')
+                input.btn.btn-inverse(type='submit', value="Register Interest!")
+              .message
+                p
 
-      .row
-        .span4.offset2
-          h3 Details:
-          ul
-            li Gold Coast Hinterland, Queensland, Australia
-            li <strong>Start</strong>: Friday Afternoon, October 19th
-            li <strong>End</strong>: Monday Morning, October 22nd
-            li <strong>Price</strong>: approx. $350 (TBA)
-          h4 More details to be released soon.
-        .span4
-          h3 Included with Ticket:
-          ul
-            li Food
-            li Comfortable Sleeping Quarters (Not Tents)
-            li Alcohol
-            li Power
-            li Talks
-
-      .row.topics
-        .span8.offset2
-          h2 Topics:
-        .span8.offset2
-          ul
-            li.label.label-info Backbone
-            li.label.label-info Ember
-            li.label.label-info Angular
-            li.label.label-info JQuery
-            li.label.label-info Underscore
-            li.label.label-info Mustache
-            li.label.label-info NodeJS
-            li.label.label-info Express
-            li.label.label-info Flatiron
-            li.label.label-info Streams
-            li.label.label-info Web Sockets
-            li.label.label-info Deployment
-            li.label.label-info Testing
-            li.label.label-info NoSQL
-            li.label.label-info CoffeeScript
-            li.label.label-info Functional
-            li.label.label-info Architecture
-            li.label.label-info Scaling
-    .footer.row
+        .row
+          .span4
+            h3 Details
+            ul
+              li Gold Coast Hinterland, Queensland, Australia
+              li <strong>Start</strong>: Friday Afternoon, October 19th
+              li <strong>End</strong>: Monday Morning, October 22nd
+              li <strong>Price</strong>: approx. $350 (TBA)
+            h4 More details to be released soon.
+            p
+              :markdown
+                Contact [Tim Oxley](http://twitter.com/secoif) if you have questions.
+          .span4
+            h3 Included with Ticket
+            ul
+              li Food
+              li Power
+              li Talks
+              li Alcohol
+              li Comfortable Sleeping Quarters (Camping Optional)
+          .span4.topics
+            h3 Who should come? Anyone interested in
+            ul
+              li.label.label-info NodeJS
+              li.label.label-info Backbone
+              li.label.label-info CoffeeScript
+              li.label.label-info jQuery
+              li.label.label-info Ember
+              li.label.label-info Express
+              li.label.label-info Web Sockets
+              li.label.label-info Angular
+              li.label.label-info Underscore
+              li.label.label-info Mustache
+              li.label.label-info Flatiron
+              li.label.label-info Streams
+              li.label.label-info Deployment
+              li.label.label-info Testing
+              li.label.label-info NoSQL
+              li.label.label-info Functional
+              li.label.label-info Architecture
+              li.label.label-info Scaling
+              li.label.label-info Beer
+    .footer
       img(src="/images/logo.png")
       .authors
         :markdown
-          By [Tim Oxley](http://twitter.com/secoif") and [Nigel Rausch](http://twitter.com/nr99)
+          By [Tim Oxley](http://twitter.com/secoif) and [Nigel Rausch](http://twitter.com/nr99)
 
     script(src='/js/libs.min.js')
     script(src='/js/templates.min.js')

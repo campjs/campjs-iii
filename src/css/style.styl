@@ -10,25 +10,36 @@ html
   background-color: #d1dfbc
 html, body
   width: 100%
+  @media (max-width: 767px)
+    html, body
+      width: auto
 body
   font-family: 'Lato', 'Helvetica', sans-serif
   color: #555
   text-shadow: -1px -1px 0px rgba(#DDD, 0.3)
-  background: transparent
+  background: #d1dfbc
   padding-bottom: 0px
-  min-width: 1024px
   ul
     li
       font-size: 110%
+
+  @media (max-width: 640px)
+    h3
+      margin-top: 20px
 .bg
   position: absolute
   top: 0
   height: 100%
   width: 100%
-  background-position-x: center
+  background-position: center 0
   background-repeat: no-repeat
   overflow: visible
   z-index: 10
+  @media (max-width: 768px)
+    left: -20px
+    width: auto
+    right: 0px
+    background-size: 140%
 
 div[data-stellar-ratio]
   -webkit-backface-visibility: hidden
@@ -41,52 +52,73 @@ div[data-stellar-ratio]
   position: fixed
   background-color: #e0f3fa
   background-attachment: fixed
-  height: 450px
+  @media (max-width: 640px)
+    position: absolute
+    top: 0
 .grass
   background-color: #d1dfbc
   background-attachment: fixed
   margin-top: 301px
   z-index: 13
+  @media (max-width: 640px)
+    margin-top: 240px
 .clouds
   background-image: url('/images/clouds.png')
   margin-top: 160px
+  background-position: -300px 0
+  @media (max-width: 640px)
+    margin-top: 190px;
 
 .small-mountains
   background-image: url('/images/small-mountains.png')
   height: 101px
   margin-top: 200px
   z-index: 12
+  @media (max-width: 640px)
+    margin-top: 206px
 .large-mountains
   background-image: url('/images/large-mountains.png')
   height: 101px
   margin-top: 200px
   z-index: 12
-.monolith
-  background-image: url('/images/monolith.png')
-  margin-top: 180px
-  height: 392px
+
 .back, .mid, .fore
   z-index: 13
   margin-top: 180px
 .back
   background-image: url('/images/back.png')
+  @media (max-width: 640px)
+    margin-top: 155px
 .mid
   background-image: url('/images/mid.png')
   margin-top: 180px
+  @media (max-width: 640px)
+    margin-top: 160px
 .fore
   background-image: url('/images/fore.png')
   margin-top: 340px
+  @media (max-width: 640px)
+    margin-top: 210px
 
 .masthead, .footer
   width: 100%
   text-align: center
   font-family: 'SilkscreenNormal', monospace
+  @media (max-width: 640px)
+    width: auto
   h1
-    font-family: 'Shakagraphics', monospace
+    font-family: 'SG1212', monospace
     font-weight: normal;
     text-transform: uppercase
     font-size: 135px
     display: inline
+  @media (max-width: 640px)
+    h1
+      font-size: 60px
+    h2
+      font-size: 10px
+      line-height: 14px
+      display: inline
   h2
     margin: 0px 0 0
     font-size: 15.3px
@@ -101,14 +133,21 @@ div[data-stellar-ratio]
   position: fixed
 .footer
   background-color: #d1dfbc
-  margin-top: 40px
+  padding-top: 40px
   position: relative
   top: -1px
   z-index: 15
   padding-bottom: 100px
+  margin-bottom: 0px;
+.sheep
+  text-align: right
+  img
+    position: relative
+    top: 0px
 .promo
   h2
-    font-size: 2em
+    font-size: 3.1em
+    text-align: center
 .topics
   ul
     margin: 0
@@ -128,5 +167,8 @@ div[data-stellar-ratio]
   position: relative
   z-index: 15
   margin-top: 650px
+  @media (max-width: 640px)
+    margin-top: 340px
+
 
 

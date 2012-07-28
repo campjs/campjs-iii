@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       css: {
         src: ['<banner:meta.banner>',
               'vendor/css/bootstrap.css',
-              'vendor/css/bootstrap.responsive.css',
+              'vendor/css/bootstrap-responsive.css',
               'public/css/style.css'
         ],
         dest: 'public/css/screen.css'

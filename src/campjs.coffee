@@ -1,6 +1,8 @@
+
 window.Campjs =
   init: ->
-    if ($.browser.webkit)
+    isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)
+    if ($.browser.webkit && !isMobile)
       $('body').stellar
         positionProperty: 'transform'
         verticalOffset: 150
@@ -9,17 +11,17 @@ window.Campjs =
       beforeSubmit: ->
         userDetails = $('.details').val()
         if (!userDetails)
-          $('.message').html('Do tell me more&hellip;')
+          $('.message').html('<span class="label label-warning">Do tell me more&hellip;</span>')
           return false
         if /^(.+)@(.+)$/.test(userDetails) or /^@[A-Za-z0-9-_]+$/.test(userDetails)
-          $('.message').html('Submitting&hellip;')
+          $('.message').html('<span class="label label-info">Submitting&hellip;</span>')
           return true
-        $('.message').html('No good! I need an @twitter or user@email.com address.')
+        $('.message').html('<span class="label label-important">No good! I need an @twitter or user@email.com address.</span>')
         return false
       success: ->
-        $('.message').html('Success')
+        $('.message').html('<span class="label label-success">Success</span>')
       error: ->
-        $('.message').html('Fail')
+        $('.message').html('<span class="label label-important">Fail</span>')
 
     #animateClouds = ->
       #clouds = $('.clouds')
