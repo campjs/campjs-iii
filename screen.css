@@ -5796,7 +5796,7 @@ a.badge:hover {
   }
 }
 
-@import url("http://fonts.googleapis.com/css?family=Lato");
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:700,400);
 @font-face {
   font-family: 'SilkscreenNormal';
   src: url("/fonts/slkscr-webfont.eot");
@@ -5849,7 +5849,7 @@ body {
   }
 }
 body {
-  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-family: 'Titillium Web', 'Helvetica', sans-serif;
   color: #555;
   text-shadow: -1px -1px 0px rgba(221,221,221,0.3);
   background: #d1dfbc;
