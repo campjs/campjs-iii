@@ -6066,3 +6066,19 @@ div[data-stellar-ratio] {
   }
 }
 
+.blog {
+}
+
+.blog .post {
+  padding: 0px 10px;
+  border-bottom: 1px dotted #DDD;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.blog .post code {
+  position: relative;
+  left: -10px;
+  top: -10px;
+  background: rgba(255, 255, 255, 0.3)
+}
