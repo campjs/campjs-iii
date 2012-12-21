@@ -6066,6 +6066,13 @@ div[data-stellar-ratio] {
   }
 }
 
+#tickets {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  z-index: 20;
+}
+
 .blog {
 }
 
