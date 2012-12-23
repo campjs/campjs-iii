@@ -6089,3 +6089,17 @@ div[data-stellar-ratio] {
   top: -10px;
   background: rgba(255, 255, 255, 0.3)
 }
+
+#sponsors {
+  text-align: center;
+}
+
+#sponsors a img {
+  border: 10px solid white;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+#sponsors a {
+  margin: 0 10px;
+}
