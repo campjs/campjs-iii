@@ -6077,17 +6077,25 @@ div[data-stellar-ratio] {
 }
 
 .blog .post {
-  padding: 0px 10px;
+  padding: 1em 20px;
   border-bottom: 1px dotted #DDD;
-  background: rgba(255, 255, 255, 0.1);
-  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+.blog .post h2 {
+  font-size: 2.2em;
 }
 
 .blog .post code {
-  position: relative;
-  left: -10px;
-  top: -10px;
-  background: rgba(255, 255, 255, 0.3)
+  font-size: smaller;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #777;
 }
 
 #sponsors {
