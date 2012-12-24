@@ -6083,10 +6083,12 @@ div[data-stellar-ratio] {
   margin-bottom: 30px;
   padding-bottom: 1em;
   position: relative;
+  font-size: 1.2em;
 }
 
 .blog .post h2 {
   font-size: 2.2em;
+  margin-bottom: 0.5em;
 }
 
 .blog .post code {
