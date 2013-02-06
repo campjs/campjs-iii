@@ -6108,6 +6108,7 @@ div[data-stellar-ratio] {
   border: 10px solid white;
   border-top: 5px solid white;
   border-bottom: 5px solid white;
+  background: #fff;
 }
 
 #sponsors a {
