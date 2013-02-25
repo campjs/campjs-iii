@@ -6066,6 +6066,8 @@ div[data-stellar-ratio] {
   }
 }
 
+
+
 #tickets {
   position: fixed;
   top: 0;
@@ -6145,4 +6147,50 @@ div[data-stellar-ratio] {
   margin-right: 1em;
   margin-bottom: 0.8em;
   margin-top: 0.2em;
+}
+
+@media (max-width: 979px) {
+  .ZXiHwc {
+    display: none;
+  }
+}
+
+.tDMXke {
+  display: block;
+}
+
+.ENVyvf, .Waa, .Xaa, .A4Cnqf {
+}
+.ZXiHwc {
+  position: relative;
+  left: 40px;
+}
+.PkkLkd {
+  -webkit-transition: all 218ms ease-in-out;
+  -moz-transition: all 218ms ease-in-out;
+  -o-transition: all 218ms ease-in-out;
+  transition: all 218ms ease-in-out;
+  overflow: hidden;
+  position: absolute;
+}
+
+.m-la-qONoCf-Id-wc {
+filter: alpha(opacity=0);
+opacity: 0;
+-webkit-transition: opacity 218ms;
+-moz-transition: opacity 218ms;
+-o-transition: opacity 218ms;
+transition: opacity 218ms;
+}
+.m-la-qONoCf-Id {
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transition: all 218ms;
+  -moz-transition: all 218ms;
+  -o-transition: all 218ms;
+  transition: all 218ms;
+  width: 100%;
 }
