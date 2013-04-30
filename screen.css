@@ -6101,7 +6101,10 @@ div[data-stellar-ratio] {
   background: rgba(255, 255, 255, 0.4);
   color: #777;
 }
-
+.blog .post h2 a {
+  color: #555;
+  text-shadow: -1px -1px 0px rgba(221,221,221,0.3);
+}
 #sponsors {
   text-align: center;
 }
