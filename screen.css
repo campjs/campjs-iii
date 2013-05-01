@@ -6092,7 +6092,10 @@ div[data-stellar-ratio] {
   font-size: 2.2em;
   margin-bottom: 0.5em;
 }
-
+.blog .post img.pull-right {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
 .blog .post code {
   font-size: smaller;
   position: absolute;
