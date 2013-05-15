@@ -163,8 +163,8 @@ textarea {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 24px;
   color: #333333;
   background-color: #ffffff;
 }
@@ -6199,4 +6199,9 @@ transition: opacity 218ms;
   -o-transition: all 218ms;
   transition: all 218ms;
   width: 100%;
+}
+
+.post blockquote {
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.3)
 }
