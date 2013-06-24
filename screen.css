@@ -6066,8 +6066,6 @@ div[data-stellar-ratio] {
   }
 }
 
-
-
 #tickets {
   position: fixed;
   top: 0;
@@ -6090,7 +6088,7 @@ div[data-stellar-ratio] {
 }
 
 .blog .post h2 {
-  font-size: 2.2em;
+  font-size: 2.0em;
   margin-bottom: 0.5em;
 }
 .blog .post img.pull-right {
@@ -6107,7 +6105,7 @@ div[data-stellar-ratio] {
 }
 .blog .post h2 a {
   color: #555;
-  text-shadow: -1px -1px 0px rgba(221,221,221,0.3);
+  text-shadow: -1px -1px 0px rgba(221,221,221,0.4);
 }
 
 #sponsors {
@@ -6115,6 +6113,7 @@ div[data-stellar-ratio] {
   background: #fff;
   padding: 1em 0;
   outline: 15px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 0 5px rgba(0,0,0,0.2)
 }
 
 #sponsors a img {
