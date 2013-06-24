@@ -6110,6 +6110,8 @@ div[data-stellar-ratio] {
 }
 #sponsors {
   text-align: center;
+  background: #fff;
+  padding: 1em 0;
 }
 
 #sponsors a img {
