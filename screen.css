@@ -6108,10 +6108,12 @@ div[data-stellar-ratio] {
   color: #555;
   text-shadow: -1px -1px 0px rgba(221,221,221,0.3);
 }
+
 #sponsors {
   text-align: center;
   background: #fff;
   padding: 1em 0;
+  outline: 15px solid rgba(255, 255, 255, 0.3);
 }
 
 #sponsors a img {
