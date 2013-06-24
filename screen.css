@@ -6123,6 +6123,7 @@ div[data-stellar-ratio] {
 #sponsors a {
   margin: 0 10px;
   margin-bottom: 1em;
+  display: inline-block;
 }
 
 .workshop {
