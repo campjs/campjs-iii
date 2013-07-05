@@ -6084,7 +6084,8 @@ div[data-stellar-ratio] {
   margin-bottom: 30px;
   padding-bottom: 1em;
   position: relative;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  clear: both;
 }
 
 .blog .post h2 {
@@ -6137,18 +6138,23 @@ div[data-stellar-ratio] {
   border-bottom: 1px dotted rgba(0,0,0,0.2);
 }
 
-.workshop p {
+.workshops {
+  clear: left;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  float: left;
  }
 
 
-.workshop h3 {
+.container .workshoppers h2 {
   clear: both;
-  margin-bottom: 0.5em;
   font-size: 1.8em;
+  margin-bottom: 0;
 }
 
-.workshoppers h4 {
-  clear: both;
+
+.workshoppers h3 {
   margin-bottom: 1em;
 }
 
@@ -6159,6 +6165,13 @@ div[data-stellar-ratio] {
   margin-right: 1em;
   margin-bottom: 0.8em;
   margin-top: 0.2em;
+}
+
+
+.workshoppers hr {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  clear: both;
 }
 
 @media (max-width: 1200px) {
