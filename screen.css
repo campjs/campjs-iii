@@ -6086,6 +6086,7 @@ div[data-stellar-ratio] {
   position: relative;
   font-size: 1.1em;
   clear: both;
+  overflow: auto;
 }
 
 .blog .post h2 {
@@ -6167,6 +6168,10 @@ div[data-stellar-ratio] {
   margin-top: 0.2em;
 }
 
+.presenter {
+  color: #999999;
+  font-size: smaller;
+}
 
 .workshoppers hr {
   border: 0;
