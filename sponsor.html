@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>CAMPJS: Javascript hack retreat for all node.js & web-application developers.</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/screen.css?v=4" rel="stylesheet" type="text/css" />
+    <script>window["_GOOG_TRANS_EXT_VER"] = "1";</script>
+    <script>
+      // Check if a new cache is available on page load.
+      window.addEventListener('load', function(e) {
+
+      window.applicationCache.addEventListener('updateready', function(e) {
+      if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      // Swap it in and reload the page to get the new hotness.
+      window.applicationCache.swapCache();
+      window.location.reload();
+      } else {
+      // Manifest didn't change. Nothing new to server.
+      }
+      }, false);
+
+      }, false);
+      </script>
+  </head>
+  <body>
+    <header class="container">
+      <div class="row">
+        <h1 class="logo">CAMPJS<br />III</h1>
+        <h2>May&nbsp;9th&nbsp;—&nbsp;12th 2014</h2>
+        <h3>Melbourne, Australia.</h3>
+      </div>
+    </header>
+
+    <div class="container menu">
+      <div class="row">
+        <nav class="navbar navbar-default" role="navigation"> 
+          <ul class="nav navbar-nav nav-justified">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/stories.html">Stories from CampJS</a></li>
+            <li><a href="https://github.com/campJS/discussions">Ask a Question!</a></li>
+            <li><a href="https://github.com/campJS/campjs-iii-cfp">Call For Proposals!</a></li>
+            <li class="active"><a href="/sponsor.html">Sponsor!</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main class="container"> 
+    <div class="row">
+    </div>
+    </main>
+    <hr />
+    <footer class="container">
+      <div class="row">
+        <h4 class="logo">CAMPJS</h4>
+        <h5>
+          <a href="https://plus.google.com/communities/106906604683614333625">CampJS Google+ Community</a>
+        </h5>
+        <h5>
+          <a class="authors" href="https://twitter.com/campjsnews">@campjsnews</a>
+        </h5>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37242312-1']);
+      _gaq.push(['_setDomainName', 'campjs.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
+   </body>
+ </html>
+
