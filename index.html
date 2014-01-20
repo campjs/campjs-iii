@@ -9,7 +9,7 @@
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico" />
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/screen.css?v=4" rel="stylesheet" type="text/css" />
     <script>window["_GOOG_TRANS_EXT_VER"] = "1";</script>
     <script>
@@ -30,129 +30,192 @@
       }, false);
       </script>
   </head>
-  <body>
+  <body class="home">
+    <div class="wrap">
     <header class="container">
       <div class="row">
         <h1 class="logo">CAMPJS<br />III</h1>
-        <h2>May&nbsp;9th&nbsp;—&nbsp;12th 2014</h2>
-        <h3>Melbourne, Australia.</h3>
+        <h2>May&nbsp;23&nbsp;—&nbsp;26 2014</h2>
+        <h2>Melbourne, Australia.</h2>
       </div>
     </header>
-
+    
     <div class="container menu">
       <div class="row">
-        <nav class="navbar navbar-default" role="navigation"> 
-          <ul class="nav navbar-nav nav-justified">
-            <li class="active"><a href="/index.html">Home</a></li>
-            <li><a href="/stories.html">CampJS Stories!</a></li>
-            <li><a href="https://github.com/campJS/discussions">Ask a Question!</a></li>
-            <li><a href="https://github.com/campJS/campjs-iii-cfp">Call For Proposals!</a></li>
-            <li><a href="/sponsor.html">Sponsor!</a></li>
-          </ul>
-        </nav>
+        <div class="col-sm-12 col-md-12 col-md-offset-0">
+          <nav class="navbar navbar-default" role="navigation"> 
+            <ul class="nav nav-justified">
+              <li class="active"><a href="/index.html">Home</a></li>
+              <li><a href="https://github.com/campJS/discussions/issues">Discussions</a></li>
+              <li><a href="/sponsor.html">Sponsor</a></li>
+              <li><a href="/stories.html">Stories</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
+
     <main class="container"> 
       <div class="row">
-        <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <div class="col-md-4 col-md-offset-4">
+          <p>
+            <a id="buy-tickets" class="btn btn-lg btn-warning btn-block buy-tickets" href="http://tickets.campjs.com/">Get Tickets</a> 
+          </p>
+          <p>
+            Tickets go on sale 11am EST, Friday January 24th 2014.
+          </p>
         </div>
-        <div class="col-sm-12">
-          <form class="form-horizontal col-md-8 col-md-offset-2" role="form" accept-charset="UTF-8" action="http://tickets.campjs.com//campjs/campjs-iii/interested_users"  id="new_event_interested_user" method="post">
-            <fieldset>
-              <legend><a name="register-interest"></a>Register Interest</legend>
-              <div class="form-group">
-                <label class="col-sm-2 control-label" for="event_interested_user_name">Name</label>
-                <div class="col-sm-10">
-                  <input class="form-control first" id="event_interested_user_name" name="event_interested_user[name]" placeholder="name" size="30" type="text">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-2 control-label" for="event_interested_user_email">Email</label>
-                <div class="col-sm-10">
-                  <input class="form-control last" id="event_interested_user_email" name="event_interested_user[email]" placeholder="email address" size="30" type="email">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <input class="btn btn-primary" name="commit" type="submit" value="Register Interest">
-                  <p class="help-block">Be the first to get notified when tickets go on sale!</p>
-                </div>
-              </div>
-              <input name="utf8" type="hidden" value="✓">
-            <fieldset>
-          </form>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
+          <section>
+            <h2>A weekend-long hack-retreat with JavaScript developers.</h2>
+            <p>
+              CampJS tries to create a unique blend of expert-led, structured
+              content and self-directed, unstructured learning. 
+            </p>
+            <p>
+              There will be two CampJS Events in 2014. The first CampJS for 2014
+              will be held at 3pm Friday on the 23rd to 9am Monday the 26th of
+              May, 2014 at <a
+                href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=Lord+Somers+Camp+Parklands+Avenue+Somers&sll=-37.787844,145.025454&sspn=0.019637,0.046778&ie=UTF8&cid=-38391441,145152110,7610982389541332772&ll=-38.382642,145.160122&spn=0.023548,0.036478&z=14&iwloc=A&source=embed">Lord
+                Somers Camp, Victoria, Australia</a>.
+            </p>
+            <p>
+              Comfortable accommodation is provided (tents optional!).
+            </p>
+          </section>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-12 col-md-8 col-md-offset-2">
-          <h1>About CampJS III</h1>
+        <div class="col-sm-12 col-md-8 col-md-offset-2" id="content-wrap">
+          <section>
+            <h1 style="text-align: center">CampJS 2014</h1>
+            <p>
+            The following outlines what you should expect from CampJS in 2014:
+            </p>
+            <h2>Top Australian Developers</h2>
+            <p>
+              The Australian JavaScript community is brimming with talent, and
+              much of that talent congregates at CampJS. This is an opportunity
+              to connect with the best &amp; friendliest developers in Australia.
+            </p>
+            <h2>Invited Guests</h2>
+            <p>
+              Last year we imported some of the world's biggest names in
+              JavaScript and web development including TJ Holowaychuk, Angelina
+              Fabbro, Substack, Dominic Tarr and Max Ogden.
+            </p>
+            <p>
+              In 2014 we plan to bring more awesome developers from around the
+              globe, big names soon to be announced!
+            </p>
+          </section>
+          <section>
+          <h2>Hack Space</h2>
           <p>
-          CampJS is a Friday to Monday event bringing the full spectrum of JavaScript technology to the widest audience possible.
-          Clientside and serverside. Frameworks and frameworkless. Software and hardware. Beginner to advanced.
-          The goal is for everyone to walk away with more friends, better connections and an upgraded, cutting-edge skillset.
+          <img src="images/hackspace2.jpg" />
           </p>
-          <h2>The CampJS Format</h2>
           <p>
-          CampJS combines the best of both structured and unstructured conferences. 
-          Some of the greatest value of a conference is in the people you meet. This opportunity is often limited to the few minutes between talks and the afterparty!
-          This isn't enough time to make real friends! CampJS is basically a weekend-long afterparty, interspersed with optional world-class presentations by invited local &amp; international guests.
+          The best way to learn is by doing, thus the hall is mostly reserved
+          for uninterrupted hacking. Get inspired by the talks &amp; workshops
+          or the awesome collective talent in the room. Build anything you
+          want.
           </p>
           <p>
-          We're refining our format based on feedback from prior events. The following outlines what you should expect from CampJS in 2014:
+            <img src="images/hacking-outside.jpg"/>
           </p>
-          <h3>Hack Space</h3>
           <p>
-          The main space at the venue is primarily reserved for uninterupped hacking. On the Sunday evening people are encouraged to give a short, &lt;3min presentation on what
-          they worked on over the weekend. Prizes and glory will be awarded for the best demos!
+          On the final evening, everyone is given the opportunity to show off
+          what they built or learned at CampJS, with prizes for the best
+          presentations!
+          </p>
+          <p>
+            <img src="images/demos.jpg" />
           </p>
           <blockquote class="twitter-tweet" lang="en"><p>hacking on voxel sheep w/ <a href="https://twitter.com/codemiller">@codemiller</a> and <a href="https://twitter.com/substack">@substack</a> at <a href="https://twitter.com/campjsnews">@campjsnews</a> <a href="http://t.co/tVamTEaV">pic.twitter.com/tVamTEaV</a></p>&mdash; voxel.js (@voxeljs) <a href="https://twitter.com/voxeljs/statuses/303134076427202561">February 17, 2013</a></blockquote>
-          <h3>Presentations</h3>
-
-          <h4>Workshops</h4>
-          <blockquote class="twitter-tweet" lang="en"><p>Everybody in the club learnin Node.js for the much win! <a href="https://twitter.com/search?q=%23campjs&amp;src=hash">#campjs</a> <a href="http://t.co/hHoMlfTplH">http://t.co/hHoMlfTplH</a></p>&mdash; Josh Gillies (@joshgillies) <a href="https://twitter.com/joshgillies/statuses/365979644404576257">August 9, 2013</a></blockquote>
-          <p> 
-          The most overwhelming response from the last CampJS survey was the love of our 2 hands-on workshops from CampJS II:</p>
+          </section>
+          <section>
+          <h2>Workshops</h2>
+          <p>
+          Workshops are expert-led tuition to get people's hands dirty using
+          new tools and techniques.
+          </p>
+          <p>
+          <img src="images/workshops.jpg"/>
+          </p>
+          <p>
+            To ensure a great learning environment, CampJS 2014 workshops are
+            limited to smaller groups. Workshops will repeat over the duration
+            of the camp so nobody misses out.  Workshops will be run by at
+            least two tutors.
+          </p>
+          <a href="/suggest.html">We're looking for people to run workshops on emerging web technology.</a>
+          <h2>Talks</h2>
+          <p>
+          <img src="images/talks.jpg"/>
+          </p>
+          <p>
+          Talks are limited to fast 20 minute sessions, ideally presented in pairs (!) on upcoming, cutting-edge web technology.
+          </p>
+          <p>
+          Talks serve as great introductions for workshops!
+          </p>
+          <p>
+          <a href="/suggest.html">We're looking for speakers who can deliver tight, informative presentations.</a>
+          </p>
+          </section>
+          <section>
+          <h2>Tickets</h2>
+          <p>
+            Tickets to CampJS will be around $420 per-person. This grants you:
+          </p>
           <ul>
-            <li>Full-stack Node workshop by <a href="http://www.thoughtworks.com/">ThoughtWorks</a>, where <a href="http://harrietgl.wordpress.com/2013/08/15/impostor-plus-a-campjs-recap/">participants worked together to hack up a "TRON Game"</a> using JavaScript, some RaspberryPIs and some LED matrices.</li>
-            <li><a href="https://github.com/rvagg/learnyounode">learnyounode</a> by <a href="https://github.com/rvagg/">rvagg</a>. Learnyounode has become an incredibly popular and core curriculum for <a href="http://nodeschool.io">nodeschool.io</a>. </li>
+            <li>3 nights of comfortable accommodation (tents optional).</li>
+            <li>3 meals per day.</li>
+            <li>Morning &amp; afternoon tea.</li>
+            <li>Unlimited "refrigerated beverages".</li>
+            <li>Free access to talks and workshops.</li>
+            <li>Opportunity to win prizes.</li>
+            <li>A fun weekend hanging out with the best developers in
+            Australia and from around the world.</li>
           </ul>
           <p>
-            We are going to try focus on delivering more high quality workshops in 2014. To ensure we create a great learning environment, workshops should be designed for a small group of 5 - 15 participants.
-            Workshops will repeat over the duration of the camp so nobody misses out. Workshops should be run by at least two tutors.
+            Tickets will be released to the public in limited batches starting
+            11am EST, Friday January 24th 2014. See <a
+              href="http://tickets.campjs.com/">ticketing</a> for the latest
+            pricing.
+          </p>
+          </section>
+          <section>
+          <h2>Corporate/Group Discounts</h2>
+          <p>
+            Want to send 3 or more developers to CampJS? Consider <a href="/sponsor.html">sponsoring CampJS</a> (help make CampJS better!) or <a href="http://tickets.campjs.com/">See ticketing for deals.</a>
+          </p>
+          </section>
+          <section>
+          <h2>Sponsors</h2>
+          <p>
+            CampJS is looking for sponsors large and small. We are particularly
+            interested in sponsors willing to attend the Camp and get involved
+            with our community for any kind of creative, educational &amp;
+            community-building activities.
           </p>
           <p>
-            Workshops should be open-source and have enough instruction to be usable for people who aren't attending CampJS. We encourage the use of the <a href="https://github.com/rvagg/workshopper">Workshopper Framework</a>.
-          </p>
-          <h4>Talks</h4>
-          <img src="http://writing.colin-gourlay.com/images/sea-of-coders-at-campjs.jpg"/>
-          <p>
-            Talks are limited to fast, 20 minute sessions to encourage more focussed talks. Shallow "Readme" talks are discouraged; talks should be built around original research or personal experiences - something unique!
-            Speakers may opt to run a second session to cover their topic in-depth. Any content which might not fit in a short talk should be run as a workshop!
-          </p>
-          <p>To reducing the stress and workload of talk preparation and applying some pre-talk sanity checking, we would like to encourage <strong>a minimum of two presenters per talk</strong>.
+          <a href="sponsor.html">Become a sponsor</a>
           </p> 
-          <h3>Tickets</h3>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
           <p>
-          TBA.
+            <a id="buy-tickets" class="btn btn-lg btn-warning btn-block buy-tickets" href="http://tickets.campjs.com/">Get Tickets</a> 
           </p>
-          <h3>Corporate/Group Discount</h3>
-          <p>
-            If you'd like to send your entire team to CampJS, we will offer discounts for groups of 3 or more.
-          </p>
-          <h3>Sponsors</h3>
-          <p>
-          CampJS looking for sponsors large and small. We are particularly interested in creative, educational &amp; community-building
-          sponsorships, from sponsors willing to attend the Camp and get involved with our community. 
-          </p>
-          <p>
-          To become a sponsor see the sponsors page.
-          </p> 
-          <h3><a href="#register-interest">Register Interest!</a></h3>
         </div>
       </div>
     </main>
-    <hr />
     <footer class="container">
       <div class="row">
         <h4 class="logo">CAMPJS</h4>
@@ -164,6 +227,8 @@
         </h5>
       </div>
     </footer>
+    </div>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -177,5 +242,7 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
     </script>
+    <img id="background" src="images/background.svg" />
+    <script type="text/javascript" src="bg.js"> </script>
    </body>
  </html>

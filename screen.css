@@ -61,49 +61,111 @@
   font-style: normal;
 }
 
-/** {*/
-  /*padding: 0;*/
-  /*margin: 0;*/
-  /*box-sizing: border-box;*/
-/*}*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #D87152;
+  text-decoration: none;
+}
 
 form, fieldset {
   border: none;
 }
+
 legend {
   font-size: larger;
 }
-/*label {*/
-  /*margin-right: 1em;*/
-/*}*/
 
-
-body {
-  font-size: 250%;
-  letter-spacing: -1px;
+blockquote {
+  border-left-color: #b4c1a3;
 }
 
-h1 {
-  font-size: 180%;
+hr {
+  border-top: 1px dotted #b4c1a3;
 }
 
-h2 {
-  font-size: 160%;
-}
-
-h3 {
-  font-size: 130%;
-  line-height: 1.1em;
-}
-h4 {
-  font-size: 100%;
-  line-height: 1.5em;
+.navbar, .navbar-default {
+  border-radius: 0px;
+  border: none;
+  background: #f1daa9;
+  border-bottom: 5px solid #D87152;
+  border-top: 5px solid #D87152;
 }
 
 body {
-  font-family: 'Titillium Web', 'Helvetica', sans-serif;
+  font-size: 170%;
   color: #333;
+  background-color: #EDF5F7;
+  font-family: "Myriad Pro", Myriad, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+@media(min-width:768px) {
+  body {
+    font-size: 220%;
+  }
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .navbar, .buy-tickets  {
+  font-family: 'Titillium Web', 'Helvetica', sans-serif;
+  font-weight: bold;
+}
+
+.twitter-tweet {
+  margin: 0 auto !important;
+}
+.wrap, #content-wrap {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+main h2, main h3 {
+  margin-top: 1em;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+  color: #565A5B
+}
+
+.nav>li>a:hover, .nav>li>a:focus, .nav>li.active a {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.buy-tickets {
+  text-transform: uppercase;
+}
+
+#buy-tickets {
+  font-size: 1.7em;
+  margin: 2em 0;
+  margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+  .home h1 {
+    font-size: 250%;
+  }
+
+  .home h2 {
+    font-size: 220%;
+  }
+
+  h3 {
+    font-size: 140%;
+    line-height: 1.1em;
+  }
+
+  h4 {
+    font-size: 120%;
+    line-height: 1.5em;
+  }
+}
+
 
 main img {
   width: 100%;
@@ -126,7 +188,6 @@ p {
 }
 
 .nav {
-  font-size: 75%;
 }
 
 .logo {
@@ -136,11 +197,30 @@ p {
 }
 
 header .logo {
-  font-size: 6em;
+  font-size: 3em;
   line-height: 1em;
   margin: 0.2em 0;
   padding: 0;
 }
+
+.home header .logo {
+  font-size: 4em;
+  line-height: 1em;
+  margin: 0.2em 0;
+  padding: 0;
+  margin-bottom: 7vw;
+}
+
+@media(min-width:768px) {
+  .home header .logo {
+    font-size: 6em;
+  }
+  header .logo {
+    font-size: 4em;
+  }
+}
+
+
 
 header h2 {
   line-height: 0.8em;
@@ -152,5 +232,18 @@ h2 {
   /*text-transform: uppercase;*/
   /*font-size: 2em;*/
   /*text-align: left;*/
+}
+
+body > * {
+  position: relative;
+  z-index: 2;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  /*bottom: 0;*/
+  width: 100%;
+  z-index: 0;
 }
 
