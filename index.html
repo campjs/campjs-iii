@@ -254,6 +254,106 @@
        })();
     </script>
     <img id="background" src="images/background.svg" />
+    <script>
+      var frames = [
+
+["                 ",
+"                 ",
+"        ;;       ",
+"        ;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ;  ;      ",
+"       ;  ;      ",
+"      ;    ;     ",
+"     ;     ;;    ",
+"                 ",
+"                 "],
+
+["                 ",
+"                 ",
+"        ;;       ",
+"        ;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ;;;       ",
+"       ; ;       ",
+"       ;  ;      ",
+"     ;;   ;      ",
+"    ;     ;      ",
+"                 ",
+"                 "],
+
+["                 ",
+"         ;       ",
+"         ;;      ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"       ;;        ",
+"       ;;        ",
+"                 ",
+"                 "],
+
+["                 ",
+"         ;;      ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"        ;;       ",
+"       ;;;       ",
+"       ;  ;      ",
+"       ; ;       ",
+"      ;  ;       ",
+"      ;          ",
+"                 ",
+"                 "]
+]
+
+
+var current = 0
+var distance = 30
+function spaces(n) {
+  return Array.apply(null, {length: n}).join(' ')
+}
+var toggle = true
+if (console.clear) {
+  (function draw() {
+    setTimeout(function() {
+      console.clear()
+      current++
+      if (current % distance === 0) {
+        frames = frames.map(function(frame) {
+          return frame.map(function(s) {
+            return s.split("").reverse().join("");
+          })
+        })
+        toggle = !toggle
+      }
+      var frame = frames[current % frames.length]
+      frame = frame.map(function(line) {
+        if (toggle) return spaces(current % distance) + line
+        else return spaces(distance - current % distance) + line
+      }).join('\n')
+      console.log('%c' + frame, 'color: javascript;')
+      draw()
+    }, 300)
+  })()
+}
+
+</script>
     <script type="text/javascript" src="bg.js"> </script>
    </body>
  </html>
