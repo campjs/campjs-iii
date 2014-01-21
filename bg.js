@@ -9,6 +9,8 @@ var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
 var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
 
 var bg = document.getElementById('background')
+var wrap = document.querySelector('.wrap')
+
 
 if (!(isFirefox || isChrome)) return
 
@@ -28,6 +30,8 @@ window.addEventListener('load', function() {
 
 function drawBg() {
   var newTop = (Math.floor(window.scrollY * (1 - (bg.clientHeight - window.innerHeight)/(document.body.clientHeight - window.innerHeight))))
+  var newOpacity = Math.max(Math.min(0.4, 0.4 * window.scrollY / (bg.clientHeight * 0.5)), 0) || 0
+  wrap.style.background = 'rgba(255, 255, 255, '+newOpacity+')'
   translateY(bg, newTop)
 }
 
@@ -50,8 +54,6 @@ function translateY(el, y){
                            'transform: translate3d(0, '+y+'px,0)'].join(';'));
 
 }
-
-
 
 var raf = window.requestAnimationFrame
   || window.webkitRequestAnimationFrame
