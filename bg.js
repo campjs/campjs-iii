@@ -30,7 +30,7 @@ window.addEventListener('load', function() {
 
 function drawBg() {
   var newTop = (Math.floor(window.scrollY * (1 - (bg.clientHeight - window.innerHeight)/(document.body.clientHeight - window.innerHeight))))
-  var newOpacity = Math.max(Math.min(0.4, 0.4 * window.scrollY / (bg.clientHeight * 0.5)), 0) || 0
+  var newOpacity = Math.max(Math.min(0.5, 0.45 * window.scrollY / bg.clientHeight * 0.6), 0) || 0
   wrap.style.background = 'rgba(255, 255, 255, '+newOpacity+')'
   translateY(bg, newTop)
 }
