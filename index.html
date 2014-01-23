@@ -259,6 +259,27 @@
     </script>
     <img id="background" src="images/background.svg" />
     <script>
+
+var raf = window.requestAnimationFrame
+  || window.webkitRequestAnimationFrame
+  || window.mozRequestAnimationFrame
+  || window.oRequestAnimationFrame
+  || window.msRequestAnimationFrame
+  || fallback;
+
+/**
+ * Fallback implementation.
+ */
+
+var prev = new Date().getTime();
+function fallback(fn) {
+  var curr = new Date().getTime();
+  var ms = Math.max(0, 16 - (curr - prev));
+  var req = setTimeout(fn, ms);
+  prev = curr;
+  return req;
+}
+
       var frames = [
 
 ["                 ",
@@ -333,9 +354,10 @@ function spaces(n) {
   return Array.apply(null, {length: n}).join(' ')
 }
 var toggle = true
+
 if (console.clear) {
   (function draw() {
-    setTimeout(function() {
+    raf(function() {
       console.clear()
       current++
       if (current % distance === 0) {
@@ -351,9 +373,11 @@ if (console.clear) {
         if (toggle) return spaces(current % distance) + line
         else return spaces(distance - current % distance) + line
       }).join('\n')
-      console.log('%c' + frame, 'color: javascript;')
-      draw()
-    }, 300)
+      console.log(frame)
+      setTimeout(function() {
+        draw()
+      }, 350)
+    })
   })()
 }
 
