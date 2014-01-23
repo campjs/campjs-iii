@@ -357,8 +357,6 @@ var toggle = true
 
 if (console.clear) {
   (function draw() {
-    raf(function() {
-      console.clear()
       current++
       if (current % distance === 0) {
         frames = frames.map(function(frame) {
@@ -373,11 +371,14 @@ if (console.clear) {
         if (toggle) return spaces(current % distance) + line
         else return spaces(distance - current % distance) + line
       }).join('\n')
-      console.log(frame)
-      setTimeout(function() {
-        draw()
-      }, 350)
-    })
+
+      raf(function() {
+        console.clear()
+        console.log(frame)
+        setTimeout(function() {
+          draw()
+        }, 100)
+      })
   })()
 }
 
