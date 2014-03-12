@@ -67,8 +67,8 @@ html {
 }
 
 a, a:hover {
-  color: #D87152;
-  text-decoration: none;
+  color: rgb(46,43,37);
+  text-decoration: underline;
 }
 
 form, fieldset {
@@ -95,9 +95,13 @@ hr {
   border-top: 5px solid #D87152;
 }
 
+.navbar a, .navbar a:hover, .btn, h3 a, h3 a:hover, .title a, .title a:hover {
+  text-decoration: none;
+}
+
 body {
   font-size: 170%;
-  color: #333;
+  color: rgb(46,43,37);
   background-color: #EDF5F7;
   font-family: "Myriad Pro", Myriad, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -235,7 +239,7 @@ header .logo {
 }
 
 header h2 {
-  line-height: 0.8em;
+  line-height: 0.6em;
 }
 
 h2 {
@@ -305,11 +309,13 @@ body > * {
 }
 #nodeschool .logo img {
   width: auto;
+  width: 60%;
 }
 
 #nodeschool .box img {
   height: 120px;
   max-width: 90%;
+  min-width: 60%;
   width: auto;
   margin-bottom: 0.5em;
 }
