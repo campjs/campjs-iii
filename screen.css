@@ -301,6 +301,7 @@ body > * {
 
 #nodeschool .box {
   text-align: left;
+  padding: 0;
 }
 
 #nodeschool .logo {
