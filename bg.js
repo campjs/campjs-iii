@@ -12,8 +12,9 @@ var bg = document.getElementById('background')
 var wrap = document.querySelector('.wrap')
 
 
-if (!(isFirefox || isChrome)) return
-bg.style.position = 'absolute'
+//bg.style.position = 'absolute'
+bg.style.width = window.innerWidth + 'px'
+
 
 var needsDraw = false
 
@@ -21,7 +22,6 @@ window.addEventListener('scroll', function() {
   needsDraw = true
 })
 
-bg.style.width = window.innerWidth + 'px'
 window.addEventListener('resize', function() {
   needsDraw = true
   bg.style.width = window.innerWidth + 'px'
@@ -30,6 +30,7 @@ window.addEventListener('resize', function() {
 window.addEventListener('load', function() {
   needsDraw = true
 })
+
 
 function drawBg() {
   var windowScroll = window.scrollY
@@ -85,6 +86,8 @@ function fallback(fn) {
   prev = curr;
   return req;
 }
+
+if (!(isChrome)) return
 drawBg()
 render()
 })()
