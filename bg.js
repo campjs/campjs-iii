@@ -13,6 +13,7 @@ var wrap = document.querySelector('.wrap')
 
 
 if (!(isFirefox || isChrome)) return
+bg.style.position = 'absolute'
 
 var needsDraw = false
 
@@ -20,8 +21,10 @@ window.addEventListener('scroll', function() {
   needsDraw = true
 })
 
+bg.style.width = window.innerWidth + 'px'
 window.addEventListener('resize', function() {
   needsDraw = true
+  bg.style.width = window.innerWidth + 'px'
 })
 
 window.addEventListener('load', function() {
@@ -29,30 +32,38 @@ window.addEventListener('load', function() {
 })
 
 function drawBg() {
-  var newTop = (Math.floor(window.scrollY * (1 - (bg.clientHeight - window.innerHeight)/(document.body.clientHeight - window.innerHeight))))
-  var newOpacity = Math.max(Math.min(0.5, 0.45 * window.scrollY / bg.clientHeight * 0.6), 0) || 0
-  wrap.style.background = 'rgba(255, 255, 255, '+newOpacity+')'
+  var windowScroll = window.scrollY
+  var windowHeight =  window.innerHeight
+  var bodyHeight = document.body.clientHeight - windowHeight
+  var bgHeight = (bg.height || bg.clientHeight) - windowHeight
+  var scrollFraction = bgHeight / bodyHeight
+
+  var newTop = Math.floor(
+    window.scrollY * (1 - scrollFraction)
+  )
+
   translateY(bg, newTop)
 }
 
 function render() {
-  if (render.lastScroll != window.scrollY) needsDraw = true
-  render.lastScroll = window.scrollY
+  var scrollY = window.scrollY
+  if (render.lastScroll != scrollY) needsDraw = true
+  render.lastScroll = scrollY
   if (needsDraw) drawBg()
   needsDraw = false
-  raf(function() {
-    render()
-  })
+  raf(render)
 }
 
-function translateY(el, y){
-  el.setAttribute('style', ['position: absolute',
-                            '-webkit-transform: translate3d(0, '+y+'px,0)',
-                           '-moz-transform: translate3d(0, '+y+'px,0)',
-                           '-ms-transform: translate3d(0, '+y+'px,0)',
-                           '-o-transform: translate3d(0, '+y+'px,0)',
-                           'transform: translate3d(0, '+y+'px,0)'].join(';'));
+var transformKey = null
 
+if (isChrome || isSafari) transformKey = 'webkitTransform'
+if (isFirefox) transformKey = 'mozTransform'
+
+function translateY(el, y){
+  var transform = 'translate3d(0, '+y+'px, 0)'
+
+  el.style.transform = transform
+  if (transformKey) el.style[transformKey] = transform
 }
 
 var raf = window.requestAnimationFrame
@@ -66,9 +77,9 @@ var raf = window.requestAnimationFrame
  * Fallback implementation.
  */
 
-var prev = new Date().getTime();
+var prev = +new Date();
 function fallback(fn) {
-  var curr = new Date().getTime();
+  var curr = +new Date();
   var ms = Math.max(0, 16 - (curr - prev));
   var req = setTimeout(fn, ms);
   prev = curr;

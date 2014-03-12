@@ -62,8 +62,8 @@
 }
 
 html {
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -251,8 +251,5 @@ body > * {
 #background {
   position: fixed;
   top: 0;
-  /*bottom: 0;*/
-  width: 100%;
   z-index: 0;
 }
-
