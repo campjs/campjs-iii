@@ -135,6 +135,10 @@ main h2, main h3 {
   margin-top: 1em;
 }
 
+main h2:first-child, main h3:first-child {
+  margin-top: 0;
+}
+
 .nav a,
 .nav a:link,
 .nav a:visited {
