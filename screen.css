@@ -66,7 +66,7 @@ html {
   padding: 0;
 }
 
-a {
+a, a:hover {
   color: #D87152;
   text-decoration: none;
 }
@@ -189,7 +189,8 @@ header {
 }
 
 p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.4em;
+  margin-top: 1em;
 }
 
 #new_event_interested_user {
@@ -229,8 +230,6 @@ header .logo {
   }
 }
 
-
-
 header h2 {
   line-height: 0.8em;
 }
@@ -241,6 +240,7 @@ h2 {
   /*text-transform: uppercase;*/
   /*font-size: 2em;*/
   /*text-align: left;*/
+  margin-bottom: 1em;
 }
 
 body > * {
@@ -252,4 +252,66 @@ body > * {
   position: fixed;
   top: 0;
   z-index: 0;
+}
+
+#mentors {
+  overflow: auto;
+  padding: 1em 0;
+}
+
+.mentor {
+  float: left;
+}
+
+.mentor img {
+  width: auto;
+  height: auto;
+}
+.mentor h3 {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+  margin-bottom: 0.2em;
+}
+
+.mentor .links {
+  margin: 0;
+  text-align: center;
+}
+
+.mentor .description {
+  font-size: 0.8em;
+}
+
+#nodeschool {
+  overflow: auto;
+}
+
+#nodeschool .desc {
+  font-size: smaller;
+}
+
+#nodeschool .box {
+  text-align: left;
+}
+
+#nodeschool .logo {
+  text-align: center;
+  margin: 2em auto;
+}
+#nodeschool .logo img {
+  width: auto;
+}
+
+#nodeschool .box img {
+  height: 120px;
+  max-width: 90%;
+  width: auto;
+  margin-bottom: 0.5em;
+}
+
+#nodeschool .box .title {
+  font-size: 1em;
+  margin: auto;
+  margin-bottom: 0.5em;
 }
