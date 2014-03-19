@@ -263,9 +263,9 @@ h2 {
   margin-bottom: 1em;
 }
 
-body > * {
+body > .wrap {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 #background {
@@ -356,4 +356,6 @@ body > * {
   margin-bottom: 0.5em;
 }
 
-
+.scrollback-stream {
+  z-index: 2;
+}
