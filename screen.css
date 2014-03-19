@@ -284,7 +284,6 @@ body > * {
 }
 .mentor {
   margin: 0.5em 0;
-  text-align: center;
 }
 
 .mentor img {
@@ -293,7 +292,6 @@ body > * {
   border-radius: 100px;
 }
 .mentor h3 {
-  text-align: center;
   font-size: 0.75em;
   margin: 0.5em 0;
   margin-bottom: 0em;
@@ -301,7 +299,6 @@ body > * {
 
 .mentor .links {
   margin: 0;
-  text-align: center;
 }
 
 .mentor .links img {
