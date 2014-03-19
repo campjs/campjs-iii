@@ -355,7 +355,3 @@ body > .wrap {
   margin: auto;
   margin-bottom: 0.5em;
 }
-
-.scrollback-stream {
-  z-index: 2;
-}

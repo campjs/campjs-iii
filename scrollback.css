@@ -1,0 +1,58 @@
+.scrollback-stream {
+  z-index: 2;
+  font-family: monospace;
+  transition: height 0.1s ease-out;
+  -webkit-transition: height 0.1s ease-out;
+  -moz-transition: height 0.1s ease-out;
+  -o-transition: height 0.1s ease-out;
+  -ms-transition: height 0.1s ease-out;
+  border-bottom: 0px;
+}
+
+.scrollback-timeline {
+  display: none;
+}
+
+.scrollback-text {
+  background: white;
+}
+
+.scrollback-message {
+  font-size: smaller;
+  border-left: 0px solid;
+  text-indent: 0;
+  padding: 0 3px;
+  margin: 0.3em 0;
+  color: #eee;
+}
+
+.scrollback-message a {
+  color: ghostwhite;
+}
+
+.scrollback-title {
+  border-bottom-color: transparent;
+}
+
+.scrollback-stream-hidden .scrollback-title-id {
+  display: block;
+}
+
+.scrollback-title-id:before {
+  content: '#';
+}
+
+.scrollback-message-timestamp {
+  display: none;
+}
+
+.scrollback-message-nick {
+}
+
+.scrollback-message-content {
+  padding-left: 5px;
+}
+
+.scrollback-message-separator {
+  display: none;
+}
