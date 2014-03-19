@@ -11,12 +11,19 @@ var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
 var bg = document.getElementById('background')
 var wrap = document.querySelector('.wrap')
 
+if (!(isChrome) && !(isSafari)) {
+  return
+}
 
-//bg.style.position = 'absolute'
-bg.style.width = window.innerWidth + 'px'
+if (isSafari) {
+  bg.style.minHeight = "100%"
+  //bg.style.width = window.innerWidth + 'px'
+  //setTimeout(function() {
+    //drawBg()
+  //})
+}
 
-
-var needsDraw = false
+var needsDraw = true
 
 window.addEventListener('scroll', function() {
   needsDraw = true
@@ -29,8 +36,8 @@ window.addEventListener('resize', function() {
 
 window.addEventListener('load', function() {
   needsDraw = true
+  bg.style.width = window.innerWidth + 'px'
 })
-
 
 function drawBg() {
   var windowScroll = window.scrollY
@@ -40,7 +47,7 @@ function drawBg() {
   var scrollFraction = bgHeight / bodyHeight
 
   var newTop = Math.floor(
-    window.scrollY * (1 - scrollFraction)
+    windowScroll * (1 - scrollFraction)
   )
 
   translateY(bg, newTop)
@@ -87,7 +94,11 @@ function fallback(fn) {
   return req;
 }
 
-if (!(isChrome)) return
-drawBg()
-render()
+
+setTimeout(function() {
+  bg.style.position = 'absolute'
+  bg.style.width = window.innerWidth + 'px'
+  drawBg()
+  render()
+})
 })()
