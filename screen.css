@@ -87,6 +87,14 @@ hr {
   border-top: 1px dotted #b4c1a3;
 }
 
+.navbar {
+  margin-bottom: 1em;
+}
+
+#tickets {
+  margin-bottom: 2em;
+}
+
 .navbar, .navbar-default {
   border-radius: 0px;
   border: none;
@@ -112,11 +120,10 @@ body {
   }
 }
 
-
-
 h1, h2, h3, h4, h5, h6, .navbar, .buy-tickets  {
   font-family: 'Titillium Web', 'Helvetica', sans-serif;
   font-weight: bold;
+  margin: 0;
 }
 
 .twitter-tweet {
@@ -132,6 +139,8 @@ h1, h2, h3, h4, h5, h6, .navbar, .buy-tickets  {
 }
 
 .wrap, #content-wrap {
+  padding: 0.5em 1em;
+  margin-top: 1em;
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -139,9 +148,9 @@ main h2, main h3 {
   margin-top: 1em;
 }
 
-main h2:first-child, main h3:first-child {
-  margin-top: 0;
-}
+/*main h2:first-child, main h3:first-child {*/
+  /*margin-top: 0;*/
+/*}*/
 
 .nav a,
 .nav a:link,
@@ -155,11 +164,11 @@ main h2:first-child, main h3:first-child {
 
 .buy-tickets {
   text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 #buy-tickets {
-  font-size: 1.7em;
-  margin: 2em 0;
+  font-size: 4em;
   margin-bottom: 0;
 }
 
@@ -170,6 +179,7 @@ main h2:first-child, main h3:first-child {
 
   .home h2 {
     font-size: 220%;
+    margin: 0 auto;
   }
 
   h3 {
@@ -201,13 +211,6 @@ p {
   margin-top: 1em;
 }
 
-#new_event_interested_user {
-  
-}
-
-.nav {
-}
-
 .logo {
   font-family: 'SG1212', monospace;
   font-weight: normal;
@@ -226,7 +229,16 @@ header .logo {
   line-height: 1em;
   margin: 0.2em 0;
   padding: 0;
-  margin-bottom: 7vw;
+  margin-bottom: 2vw;
+}
+
+header .blurb {
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+  /*margin: 1em 0;*/
+  font-size: 1.2em;
+  font-weight: normal;
+  font-style: italic;
 }
 
 @media(min-width:768px) {
@@ -239,7 +251,7 @@ header .logo {
 }
 
 header h2 {
-  line-height: 0.6em;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -258,28 +270,33 @@ body > * {
 
 #background {
   position: fixed;
+  width: 100%;
   top: 0;
   z-index: 0;
 }
 
 #mentors {
   overflow: auto;
-  padding: 1em 0;
 }
 
+#mentors h2 {
+  margin-bottom: 1em;
+}
 .mentor {
-  float: left;
+  margin: 0.5em 0;
+  text-align: center;
 }
 
 .mentor img {
-  width: auto;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
 }
 .mentor h3 {
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.75em;
   margin: 0.5em 0;
-  margin-bottom: 0.2em;
+  margin-bottom: 0em;
 }
 
 .mentor .links {
@@ -287,8 +304,24 @@ body > * {
   text-align: center;
 }
 
+.mentor .links img {
+  width: 0.75em;
+  height: 0.75em;
+}
+.mentor .links a {
+  opacity: 0.3;
+}
+
+.mentor .links a:hover {
+  opacity: 1;
+}
+
 .mentor .description {
   font-size: 0.8em;
+}
+
+#tickets {
+  margin-top: 3em;
 }
 
 #nodeschool {
@@ -315,10 +348,9 @@ body > * {
 
 #nodeschool .box img {
   height: 120px;
-  max-width: 90%;
-  min-width: 60%;
   width: auto;
   margin-bottom: 0.5em;
+  max-width: 180px;
 }
 
 #nodeschool .box .title {
@@ -326,3 +358,5 @@ body > * {
   margin: auto;
   margin-bottom: 0.5em;
 }
+
+
