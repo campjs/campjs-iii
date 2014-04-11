@@ -355,3 +355,109 @@ body > .wrap {
   margin: auto;
   margin-bottom: 0.5em;
 }
+
+#sponsors h3 {
+  margin: 0.5em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+#sponsors #content-wrap {
+  background: white;
+  border-radius: 1em;
+}
+
+#sponsors img {
+  width: auto;
+}
+
+#sponsors div {
+  text-align: center;
+}
+
+#sponsors .gold a {
+  margin: 1.5em auto;
+  margin-bottom: 2em;
+}
+
+#sponsors .gold .segmentio-icon {
+  max-width: 120px;
+  margin-bottom: 20px;
+  position: relative;
+  left: -15px;
+}
+
+#sponsors .gold .segmentio-logo {
+  max-width: 270px;
+  position: relative;
+}
+
+.smallworldsocial-logo {
+  position: relative;
+  bottom: -10px;
+}
+
+.digital-logic-logo {
+  position: relative;
+  top: -10px;
+}
+
+.impos-logo {
+  position: relative;
+  right: -20px;
+}
+
+.bombora-logo {
+  position: relative;
+  left: -10px;
+}
+
+.lookahead-logo {
+  position: relative;
+  bottom: -10px;
+}
+
+#sponsors .gold img {
+  max-width: 350px;
+}
+
+#sponsors .silver a {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+#sponsors .silver img, #sponsors .bronze img {
+  width: auto;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 55px;
+}
+
+#sponsors .silver.row :last-child {
+  text-align: right;
+}
+
+#sponsors .bronze div {
+  display: block;
+  min-height: 50px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#sponsors .bronze div a {
+
+}
+
+#sponsors .bronze img {
+  max-width: 150px;
+  max-height: 80px;
+}
+
+#sponsors .bronze {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+#sponsors .gold {
+  margin-bottom: 3em;
+}
