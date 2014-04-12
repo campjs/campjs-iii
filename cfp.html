@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="/screen.css?v=12" rel="stylesheet" type="text/css" />
+    <link href="/screen.css?v=13" rel="stylesheet" type="text/css" />
     <script>window["_GOOG_TRANS_EXT_VER"] = "1";</script>
     <script>
       // Check if a new cache is available on page load.
@@ -47,7 +47,7 @@
               <li><a href="/index.html">Home</a></li>
               <li><a href="https://github.com/campJS/campjs/issues">Discussions</a></li>
               <li><a href="/sponsor.html">Sponsor</a></li>
-              <li class="active"><a href="/cfp.html">CFP</a></li>
+              <li class="active"><a href="/sessions.html">Sessions</a></li>
               <li><a href="/stories.html">Stories</a></li>
             </ul>
           </nav>
@@ -55,68 +55,40 @@
       </div>
     </div>
 
-    <main class="container"> 
+    <main class="container">
       <div class="row">
         <div class="col-sm-12 col-md-8 col-md-offset-2" id="content-wrap">
-          <h3>CFP Deadline: Midnight, Monday 24th of February.</h3>
-          <h3>
-            What we're looking for
-          </h3>
-          <p>
-            We want CampJS to emphasise hands-on activities and focussed talks on
-            cutting-edge client and serverside technology.
-          </p>
-          <ul>
-            <li>ES6/7/8</li>
-            <li>Offline First</li>
-            <li>Web Components &amp; other new/emerging web standards.</li>
-            <li>Browser Internals (e.g. rendering).</li>
-            <li>Node/Libuv/V8 Internals</li>
-            <li>Modular Application Design i.e. not frameworks.</li>
-            <li>Alternative Databases</li>
-            <li>Taking JavaScript to new environments (e.g. robots, native apps, operating systems)</li>
-            <li>Core Node (streams, tcp, etc) i.e. not frameworks.</li>
-            <li>JavaScript-powered Games (front/backend)</li>
-            <li>Original Modules or Research</li>
-            <li>Shell &amp; editor tooling</li>
-          </ul>
-          <h3>Talks</h3>
-          <p>
-            We want to experiment with 'pair' presentations, i.e. every
-            presentation is run by at least 2 people. This should remove some
-            preparation burden, provide some level of sanity checking, and
-            hopefully make things a bit fun. It is not required for both
-            presenters to speak; Perhaps while one is speaking, the other is
-            interpreting their words with dance (?). Get creative!
-          </p>
-          <p>
-            Talks should be limited to 20 minutes. If you can't fit your
-            content in 20 minutes, perhaps you should consider running a
-            workshop.
-          </p>
-          <p>
-            If these constraints are not suitable for something you'd like to
-            present, please let us know. These are just guidelines, we are
-            flexible!
-          </p>
-          <h3>Workshops</h3>
-          <p>We want to run more, better workshops at CampJS.
-          Workshops can run up to 90 minutes, but shorter is better. Workshops
-          are limited to 20 people at a time, and should repeat at least once.
-          Minimum 2 tutors. Ideally, workshops should be entirely
-          self-directed, automated, and available online for anyone to
-          participate. Tutors should only be needed to guide and answer
-          questions.
-          </p>
-          <p>We recommend use of the
-          locally-grown <a
-            href="https://github.com/rvagg/workshopper/">workshopper</a>
-          framework. If workshopper doesn't do what you need, please consider
-          submitting a pull request to improve it.
-          </p>
-          <p>
-            <a class="btn btn-lg btn-info btn-block" href="https://docs.google.com/a/campjs.com/forms/d/1qAKHeJ2uIC36C9126ALLqZTgyoNYh-EXEtyvIEfggmU/viewform">Submit a Proposal!</a>
-          </p>
+          <div class="session">
+            <h3>A CAD -&gt; CAM solution for the browser</h3>
+            <p>
+              I'll be talking about the pain points experienced with using existing CAD and CAM systems, which include:
+            </p>
+            <ul>
+              <li>Price</li>
+              <li>Cross-platform compatibility</li>
+              <li>Usability issues</li>
+            </ul>
+
+            <p>
+            Basically, you either pay a ton of money and get "cutting edge" software and limit yourself to windows, or you can risk going with an open solution that will likely not suit your needs.  It's important that the solution you choose is hackable and in a language that many people understand.
+            </p>
+
+            <p>
+              After laying a bit more groundwork, we'll shift into more of a "how do we do this in javascript" and I'll show where I am thus far.
+            </p>
+
+            <p>
+              The kicker to this talk is walking through the various steps of:
+            </p>
+            <ul>
+              <li>Creating a 3d object
+              <li>Preparing the 3d object for milling
+              <li>Milling the object using a cnc that I'll be bringing
+            </ul>
+            <p>
+            I will go into the details of building your own cnc machine at home and how that varies from a $50,000 machine that you can get off of ebay or similar.
+            </p>
+          </div>
         </div>
       </div>
     </main>

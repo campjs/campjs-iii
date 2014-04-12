@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="/screen.css?v=12" rel="stylesheet" type="text/css" />
+    <link href="/screen.css?v=13" rel="stylesheet" type="text/css" />
     <script>window["_GOOG_TRANS_EXT_VER"] = "1";</script>
     <script>
       // Check if a new cache is available on page load.
@@ -49,7 +49,7 @@
               <li class="active"><a href="/index.html">Home</a></li>
               <li><a href="https://github.com/campJS/campjs/issues">Discussions</a></li>
               <li><a href="/sponsor.html">Sponsor</a></li>
-              <li><a href="/cfp.html">CFP</a></li>
+              <li><a href="/#sessions">Sessions</a></li>
               <li><a href="/stories.html">Stories</a></li>
             </ul>
           </nav>
@@ -355,6 +355,17 @@
                 <a href="https://twitter.com/michaeltaranto" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
               </div>
             </div>
+
+            <div class="mentor col-md-4 col-sm-3 col-xs-6">
+              <a href="https://github.com/mjt01">
+                <img src="https://avatars2.githubusercontent.com/u/912060?s=150"/>
+              </a>
+              <h3><a href="https://github.com/mjt01">David Mason</a></h3>
+              <div class="links">
+                <a href="https://github.com/mjt01" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/michaeltaranto" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
           </section>
           <h4>…more to be announced!</h4>
         </div>
@@ -424,105 +435,673 @@
 
       <div class="row">
         <div class="col-sm-12 col-md-8 col-md-offset-2" id="content-wrap">
-          <section id="schedule">
-            <h2>Draft Schedule</h2>
-            <p>This is a rough outline of some of the sessions scheduled for CampJS. Workshops will repeat so nobody misses out.</p>
-            <h3>New Workshops</h3>
-            <ul>
-              <li><strong>ES6</strong> – Domenic Denicola</li>
-              <li><strong>Generators</strong> – Julian Gruber</li>
-              <li><strong>NodeOS</strong> – Jacob Groundwater</li>
-              <li><strong>WebRTC &amp; Web Components</strong> – Damon Oehlman &amp; Benjamin Lupton</li>
-              <li><strong>Component.io</strong> – Anthony Short &amp; Ian Storm Taylor</li>
-            </ul>
-            <h3>Nodeschool Workshops</h3>
-            <ul>
-              <li>Learn You Node</li>
-              <li>Functional Javascript</li>
-              <li>Stream Adventure</li>
-              <li>Bytewiser</li>
-              <li>Git-it</li>
-            </ul>
-            <h3>Talks</h3>
-            <ul>
-              <li><strong>Docker + Node.JS</strong> – Conrad Pankoff</li>
-              <li><strong>Testing in the Cloud</strong> – Katie Miller</li>
-            </ul>
-            <h3>Other Sessions</h3>
-            <ul>
-              <li><strong>NodeBots</strong> – Anna Gerber, Andrew Fisher, Glen Arrowsmith, Mark Wolfe &amp; Brendan Halliday</li>
-              <li><strong>Frontend Modularity Panel</strong> – Open Session</li>
-              <li><strong>Home-Grown Open Source</strong> – Open Session</li>
-            </ul>
-            <h4>More to be announced!</h4>
-          </section>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-md-offset-2" id="content-wrap">
-          <section id="nodeschool">
-            <h1>NodeSchool At CampJS</h1>
-            <div class="logo">
-              <a href="http://nodeschool.io/"><img src="http://nodeschool.io/images/nodeschool-hex.png" /></a>
+          <h1 id="sessions">CampJS Sessions</h1>
+          <h4>More to be announced...</h4>
+
+          <div class="session">
+            <h2><a name="thinking-in-components" href="#thinking-in-components">Thinking in Components</a> – Workshop</h2>
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/ianstormtaylor">
+                  <img src="https://2.gravatar.com/avatar/e7f4e4b1d3b381e70f864bc7f8b4493e?r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/ianstormtaylor">Ian Storm Taylor</a></h3>
+                <div class="links">
+                  <a href="https://github.com/ianstormtaylor" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/ianstormtaylor" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/anthonyshort">
+                  <img src="https://1.gravatar.com/avatar/66a084a22668f2489f0536455d9b16da?r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/anthonyshort">Anthony Short</a></h3>
+                <div class="links">
+                  <a href="https://github.com/anthonyshort" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/anthonyshort" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
             </div>
             <p>
-            In addition to running new workshops created specifically for CampJS,
-            we're providing mentors to run the <a href="http://nodeschool.io/">NodeSchool core curriculum</a>.
+              Over the past couple of years, front-end development has begun to grow up and
+              become a serious discipline thanks to browsers and tooling but we haven’t yet
+              had a good way to share tiny pieces of front-end code. Component is that
+              solution.
             </p>
             <p>
-              You are encouraged to complete these before coming to CampJS!
+              Component gives us a package manager that tackles not only versioning, but the
+              entire front-end workflow. It has similar goals to Web Components and allows
+              you to create packages of HTML, CSS and Javascript and re-use them across all
+              your different projects.
             </p>
-            <div class="box orange col-md-4" data-url="learn-you-node">
-              <div class="screenshot">
-                <a href="https://github.com/rvagg/learnyounode/"><img src="http://nodeschool.io/images/learnyounode.png" alt=""></a>
-              </div>
-              <h2 class="title"><a href="https://github.com/rvagg/learnyounode/">Learn You Node</a></h2>
-              <p class="desc">
-                Learn the basics of node: asynchronous i/o, http
+            <p>
+              Using Component we will show you how you can structure an application and
+              create and share your own packages. Most importantly, we will show you how to
+              think in “components” instead of large libraries so you can make your HTML, CSS
+              and JS more modular than ever before.
+            </p>
+            <div class="about-mentor">
+              <h4>Ian Storm Taylor</h4>
+              <p>
+                Ian is a designer and developer at Segment.io who’s super into
+                open-source. He loves component with a passion, and thinks anyone
+                and everyone who does front-end work should be using it.
               </p>
+
+              <h4>Anthony Short</h4>
+              <p>
+                Anthony is an Australian designer and front-end engineer at Segment.io in San
+                Francisco. He is a contributor to Component and many other
+                open-source projects and thinks every library should be a
+                Component.
+              </p>
+            </div>
+          </div>
+
+          <div class="session">
+            <h2>ES6 – Workshop</h2>
+            <div class="mentor">
+              <a href="https://github.com/domenic">
+                <img src="https://0.gravatar.com/avatar/c6d819207a3010b39d13e1f59f2c0029?r=x&s=150"/>
+              </a>
+              <h3><a href="https://github.com/domenic">Domenic Denicola</a></h3>
+              <div class="links">
+                <a href="https://github.com/domenic" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/domenic" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <p>Learn how to use the next generation of JavaScript.</p>
+
+            <div class="about-mentor">
+              <h3>Dominic Denicola</h3>
+              <p>
+                Domenic Denicola is highly active in the JavaScript community,
+                building web applications for a living while maintaining many
+                open-source libraries and contributing to the web and JavaScript
+                standards process on the side. He's passionate about things like
+                software craftsmanship, the next version of JavaScript, and
+                making the standards process more transparent to developers, and
+                is known as one of the co-authors of the <a href="http://promisesaplus.com/">Promises/A+</a> open specification and the editor of
+                <a href="https://github.com/domenic/promises-unwrapping">the ES6 promises spec</a>.
+              </p>
+              <p>
+                Recently he was elected to the <a href="http://www.w3.org/2001/tag/">W3C Technical Architecture Group</a>,
+                and has been working on bringing streams <a
+                href="https://github.com/whatwg/streams/">from Node.js into the
+                browser</a>.<br /> Domenic works at <a href="http://www.lab49.com/">Lab49</a>
+                in New York City.
+              </p>
+            </div>
+          </div>
+          <div class="session">
+            <h2><a name="generators" href="#es6-generators">ES6 Generators</a> – Workshop</h2>
+            <div class="mentor">
+              <a href="https://github.com/juliangruber">
+                <img src="https://0.gravatar.com/avatar/a010d5218f2c3d194dbbac9c5d14d0ad?r=x&s=150"/>
+              </a>
+              <h3><a href="https://github.com/juliangruber">Julian Gruber</a></h3>
+              <div class="links">
+                <a href="https://github.com/juliangruber" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/juliangruber" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <p>
+              Asynchronous flow control in JavaScript was broken. It didn't matter if you
+              used pure JS or a flow control library like promises or Node.js streams, you
+              were reimplementing what the language already had and lost interoperability.
+              Instead of handling errors with try/catch blocks and iterating with loops, you
+              were forced to use something custom that didn't work well with another custom
+              thing. With generators however, you can now use those trustworthy native
+              language constructs again and still do non-blocking IO!
+              </p>
+            <p>
+              We’re already relying heavily on generators at <a href="http://segment.io">segment.io</a> and they
+              made our code a lot more solid and maintainable. Let’s look at how
+              they work and how they can be used in real life situations.
+            </p>
+            <div class="about-mentor">
+              <h4>Julian Gruber</h4>
+              <p>
+                Julian Gruber is a Software Engineer from Southern Germany who
+                splits his time between his day job at Segment.io, his many
+                independent open source projects, and his metal band <a
+                href="http://runningdeath.bandcamp.com/">Running&nbsp;Death</a>.
+                His most recent areas of interest are JS generators, LevelDB and
+                browser operating systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="session">
+            <h2><a name="nodeos" href="#nodeos">Nodeos – Adding a new level to the "full stack developer"</a> – Workshop</h2>
+            <div class="mentor">
+              <a href="https://github.com/groundwater">
+                <img src="https://1.gravatar.com/avatar/60f1d97dcc47c78778af94e6cf2f0099?r=x&s=150"/>
+              </a>
+              <h3><a href="https://github.com/groundwater">Jacob Groundwater</a></h3>
+              <div class="links">
+                <a href="https://github.com/groundwater" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/0x604" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <p>
+              <a href="http://node-os.com/">Nodeos</a> is a lightweight Linux distribution built around node and npm.
+              There is no bash, no systemd, and no apt/yum. Your system tools are
+              written in node, and installed with npm.
+            </p>
+            <p>
+              Every npm package is a nodeos package, so anyone can contribute. The
+              base nodeos install gets you started, but beyond getting a few
+              necessary services running nodeos expresses no opinions on how to run
+              your system.
+            </p>
+            <p>
+              Nodeos wants to make systems programming as accessible as node has
+              made web programming.
+            </p>
+            <div class="about-mentor">
+              <h4>Jabob Groundwater</h4>
+              <p>
+                Jacob lives in the Bay Area, but is originally from Vancouver Canada.
+                He is an applied mathematician turned sysadmin turned software
+                engineer, and currently works on node tracing at new relic.
+              </p>
+            </div>
+          </div>
+          <div class="session">
+            <h2><a name="cad-cam-for-browser" href="#cad-cam-for-browser">A CAD&rarr;CAM solution for the Browser</a> – Talk</h2>
+            <div class="mentor">
+              <a href="https://github.com/tmpvar">
+                <img src="https://avatars1.githubusercontent.com/u/46673?s=150"/>
+              </a>
+              <h3><a href="https://github.com/tmpvar">Elijah Insua</a></h3>
+              <div class="links">
+                <a href="https://github.com/tmpvar" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/tmpvar" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <p>
+              I'll be talking about the pain points experienced with using
+              existing CAD and CAM systems, which include:
+            </p>
+            <ul>
+              <li>Price</li>
+              <li>Cross-platform compatibility</li>
+              <li>Usability issues</li>
+            </ul>
+
+            <p>
+            Basically, you either pay a ton of money and get "cutting edge"
+            software and limit yourself to windows, or you can risk going with
+            an open solution that will likely not suit your needs.  It's
+            important that the solution you choose is hackable and in a
+            language that many people understand.
+            </p>
+
+            <p>
+              After laying a bit more groundwork, we'll shift into more of a
+              "how do we do this in javascript" and I'll show where I am thus
+              far.
+            </p>
+
+            <p>
+              The kicker to this talk is walking through the various steps of:
+            </p>
+            <ul>
+              <li>Creating a 3d object
+              <li>Preparing the 3d object for milling
+              <li>Milling the object using a cnc that I'll be bringing
+            </ul>
+            <p>
+            I will go into the details of building your own cnc machine at home
+            and how that varies from a $50,000 machine that you can get off of
+            ebay or similar.
+            </p>
+            <div class="about-mentor">
+              <h3>Elijah Insua</h3>
+              <p>
+              As a long time tinkerer/maker I have recently rediscovered working
+              with my hands.  Not only is it super fulfilling, but the end result
+              is a real physical thing that you can hold.  My passion for
+              building robots and the web drives my dreams of building an
+              automated infrastructure, that allows me to quickly iterate on
+              various ideas while building physical objects.  All built inside of
+              the browser of course!
+              </p>
+            </div>
+          </div>
+
+          <div class="session nodebots small">
+            <h2><a name="nodebots" href="#nodebots">NodeBots</a> – Workshop</h2>
+
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/AnnaGerber">
+                  <img src="https://2.gravatar.com/avatar/6c5be200a84951c74c05932ae73fa4a9?r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/AnnaGerber">Anna Gerber</a></h3>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/ajfisher">
+                  <img src="https://0.gravatar.com/avatar/a0006ca00e14d33a4ca6fdf5a75b6d9a?r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/ajfisher">Andrew Fisher</a></h3>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/wolfeidau">
+                  <img src="https://1.gravatar.com/avatar/ebf974e0dbcfe88c508df6f395661a4b?r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/wolfeidau">Mark Wolfe</a></h3>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/garrows">
+                  <img src="https://1.gravatar.com/avatar/626884fa79c4b3aaa75d56d278cf0b44?r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/garrows">Glen Arrowsmith</a></h3>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/nog3">
+                  <img src="/people/brendan_halliday.jpg"/>
+                </a>
+                <h3><a href="https://github.com/nog3">Brendan Halliday</a></h3>
+              </div>
+            </div>
+            <p>
+            NodeBots are Arduino-based robots that are controlled by node.js.
+            This workshop will step you through assembling a number of basic
+            circuits and programming using an Arduino-compatible
+            microcontroller and node.js, to help you get started building your
+            own NodeBots.
+            </p>
+
+            <div class="about-mentor">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="http://node-ardx.org">node-ardx</a> <a href="https://github.com/AnnaGerber/node-ardx">https://github.com/AnnaGerber/node-ardx</a>
+                <li><a href="https://github.com/ajfisher/nbdau">NodeBot Day AU Resources</a>
+                <li><a href="https://github.com/rwaldron/johnny-five">Johnny-Five</a>
+              </ul>
+              <p>
+                To make the most of the time at the workshop, set up your NodeBots environment in advance: https://github.com/ajfisher/nbdau/blob/master/setup.md
+              </p>
+            </div>
+          </div>
+
+          <div class="session">
+            <h2><a name="node-docker" href="#node-docker">Dropping Anchor – Using node.js and Docker to Build Highly-Available Systems</a> – Talk</h2>
+            <div class="mentor">
+              <a href="https://github.com/deoxxa">
+                <img src="https://1.gravatar.com/avatar/d27bae51ba163785869161126434ea56?d=https%3A%2F%2Fidenticons.github.com%2F83f849c6fe01025f8f08a6ad12d02eb2.png&r=x&s=150"/>
+              </a>
+              <h3><a href="https://github.com/deoxxa">Conrad Pankoff</a></h3>
+              <div class="links">
+                <a href="https://github.com/deoxxa" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/deoxxa" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
             </div>
 
-            <div class="box red col-md-4" data-url="stream-adventure">
-              <div class="screenshot">
-                <a href="https://github.com/substack/stream-adventure"><img src="http://nodeschool.io/images/stream-adventure.png" alt=""></a>
-              </div>
-              <h2 class="title"><a href="https://github.com/substack/stream-adventure">Stream Adventure</a></h2>
-              <p class="desc">
-                Learn how to compose streaming interfaces
-                with <code>.pipe()</code>
+            <p>
+              From the complex concepts like distributed task scheduling to
+              the simple like hosting disk images, using Docker outside of
+              an experimental context can be surprisingly difficult. Strap
+              in for an exciting ride while Conrad covers the ins and outs
+              of how he uses node.js and Docker in his internal hosting
+              platform.
+            </p>
+            <div class="about-mentor">
+              <h3>Conrad Pankoff</h3>
+              <p>
+              Skipping between multiple levels of the stack, Conrad has worked
+              on projects ranging from embedded device programming to web
+              applications to multi-machine clustered systems. Through touching
+              so many different areas, Conrad has learnt first-hand the value
+              of keeping systems flexible yet manageable.
               </p>
             </div>
-            <div class="box red col-md-4" data-url="functionaljs">
-              <div class="screenshot">
-                <a href="https://github.com/timoxley/functional-javascript-workshop"><img src="http://nodeschool.io/images/functional-js.png" alt="">
+          </div>
+
+          <div class="session">
+            <h2><a name="webrtc-components" href="#webrtc-components">WebRTC & Web Components; match made in heaven</a> – Workshop</h2>
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/DamonOehlman">
+                  <img src="https://2.gravatar.com/avatar/2f3f59b09b160bc49f1e226e5b996ca3?r=x&s=150"/>
                 </a>
+                <h3><a href="https://github.com/DamonOehlman">Damon Oehlman</a></h3>
+                <div class="links">
+                  <a href="https://github.com/DamonOehlman" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/DamonOehlman" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
               </div>
-              <h2 class="title"><a href="https://github.com/timoxley/functional-javascript-workshop">Functional JavaScript</a></h2>
-              <p class="desc">
-                Learn fundamental functional programming features of JavaScript in vanilla ES5.
-              </p>
-            </div>
-            <div class="box cyan col-md-4" data-url="bytewiser">
-              <div class="screenshot">
-                <a href="https://github.com/maxogden/bytewiser"><img src="http://nodeschool.io/images/bytewiser.png" alt="">
+              <div class="mentor">
+                <a href="https://github.com/balupton">
+                  <img src="https://1.gravatar.com/avatar/9400cb5aeb155ccec614652542fd274d?r=x&s=150"/>
                 </a>
+                <h3><a href="https://github.com/balupton">Benjamin Lupton</a></h3>
+                <div class="links">
+                  <a href="https://github.com/balupton" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/balupton" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
               </div>
-              <h2 class="title"><a href="https://github.com/maxogden/bytewiser">Bytewiser</a></h2>
-              <p class="desc">
-                Learn how to manipulate binary data in node.js and HTML5 browsers
+            </div>
+            <p>
+              Damon and Ben are both some of <a href="http://nodejs.org.au/#developers">the most active node.js module publishers in
+              Australia</a>. Damon's spent the past 6 months
+              working on <a href="http://rtc.io/">RTC.io</a> a library of javascript components to make WebRTC easy to
+              implement.  Benjamin's spent the last 6 months working on <a href="https://github.com/bevry/interconnect">InterConnect</a>, an
+              open-source mashup of (IRC, Swiggle, Skype, Google Hangouts and GitHub
+              Profiles), which is built using Web Components and RTC.io.
+            </p>
+            <p>
+              Together, RTC.io and InterConnect's web components will make
+              building skype as easy as building a web form. We will introduce
+              everyone into the technologies of WebRTC and Web Components, the
+              technical details of them, the problems they're trying to solve,
+              and the technical challenges and complexities which RTC.io and
+              InterConnect's components hide away. The workshop will get people
+              hands on with the tech, building their own skypes, adding their
+              own features, etc, and actually working with the tech, actually
+              building something that video calls to each other!
+            </p>
+          </div>
+
+
+          <div class="session">
+            <h2><a name="bem" href="#bem">BEM for JS</a> – Talk</h2>
+            <div class="mentor">
+              <a href="https://github.com/tadatuta">
+                <img src="https://avatars0.githubusercontent.com/u/475746?s=150"/>
+              </a>
+              <h3><a href="https://github.com/tadatuta">Vladimir Grinenko</a></h3>
+              <div class="links">
+                <a href="https://github.com/tadatuta" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/tadatuta" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <p>
+            Introducing BEM Block Libraries - a set of blocks build on top of
+            same ideas that inspired Web Components creators but long long time
+            ago.  Being developed in 2008 by <a href="http://www.yandex.com/">Yandex, Russian Search Engine</a>,
+            they are very helpful in building websites fast and flexible. Why
+            so? Because of the years of experience put in them while working in
+            large rapidly changing services.
+            </p>
+            <p>
+            Unfortunately it is very well known only here in Russia and
+            ex-Soviet countries, where, thanks to Harry Roberts and Nicolas
+            Gallagher, so-called BEM CSS is spread far ahead in the rest of the
+            world.  With this talk we aim to share what we have in BEM
+            Methodology to cover JS coding with and introduce Australian
+            developers to a new chapter in BEM, partly not always easy to
+            understand, open-sourced and handy for maintaining complexity of
+            web development you could grow in.
+            </p>
+            <div class="about-mentor">
+              <h4>Vladimir Grinenko</h4>
+              <p>
+                Vladimir Grinenko is a web developer with more than 10 years of fronted
+                experience and a deep expertise in HTML5, CSS3 and JavaScript. He works for
+                Yandex, Russian Search engine, and leads a team that develops BEM technologies.
+                He also evangelizes a lot both in Russian and English and gives live coding
+                sessions as well as maintains and contributs to few opensource projects. His
+                area of speaking experience includes such topics as BEM technologies, large
+                scale web sites architecture, modular frontend applications development, etc.
               </p>
             </div>
-            <div class="box orange col-md-4" data-url="git-it">
-              <div class="screenshot">
-                <a href="https://github.com/jlord/git-it"><img src="http://nodeschool.io/images/git-it.png" alt="">
+          </div>
+
+          <div class="session small">
+            <h2><a name="gulp" href="#gulp">Front-end Builds with Gulp</a> – Workshop</h2>
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/markdalgleish">
+                  <img src="https://avatars3.githubusercontent.com/u/696693?s=150"/>
                 </a>
+                <h3><a href="https://github.com/markdalgleish">Mark Dalgleish</a></h3>
+                <div class="links">
+                  <a href="https://github.com/markdalgleish" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/markdalgleish" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
               </div>
-              <h2 class="title"><a href="https://github.com/jlord/git-it">Git-it</a></h2>
-              <p class="desc">
-                Learn Git and GitHub basics.
+              <div class="mentor">
+                <a href="https://github.com/mjt01">
+                  <img src="https://avatars2.githubusercontent.com/u/912060?s=150"/>
+                </a>
+                <h3><a href="https://github.com/mjt01">Michael Taranto</a></h3>
+                <div class="links">
+                  <a href="https://github.com/mjt01" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/michaeltaranto" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+            </div>
+            <p>
+              After looking at the current state of JS build tools, we'll run through the creation of a standard Gulpfile.
+            </p>
+          </div>
+
+          <div class="session small">
+            <h2><a name="offline-first" href="#offline-first">Offline-First from First Principals</a> – Workshop</h2>
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/geelen">
+                  <img src="/people/glen_maddern.jpg"/>
+                </a>
+                <h3><a href="https://github.com/geelen">Glen Maddern</a></h3>
+                <div class="links">
+                  <a href="https://github.com/geelen" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/glenmaddern" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/benschwarz">
+                  <img src="/people/ben_schwarz.jpg"/>
+                </a>
+                <h3><a href="https://github.com/benschwarz">Ben Schwarz</a></h3>
+                <div class="links">
+                  <a href="https://github.com/benschwarz" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/benschwarz" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+            </div>
+            <p>
+              I think it'd be interesting to show how something like Hoodie works, and how
+              you could do something similar in Angular. We could do a 'OMG look at Hoodie'
+              workshop but I think something more low-level would be better. Schwarz,
+              thoughts?
+            </p>
+            <div class="about-mentor">
+              <h4>Glen Maddern</h4>
+              <p>
+                Glen Maddern is an independent web developer from Melbourne,
+                Australia, with a background in mathematical simulations and
+                distributed computing.  Since 2009, he's been working exclusively
+                on the web and most recently, almost entirely on the front-end.
+                He believes there's never been a more potent target for ideas
+                than the browser and the web, and loves the incredible pace at
+                which new ideas are emerging.  He runs the Melbourne AngularJS
+                meetup and is an organiser of the inaugural CSSConfAU.
+              </p>
+              <h4>Ben Schwarz</h4>
+              <p>
+                Ben Schwarz is an independent web dude from Melbourne. He's an
+                invited expert to the W3C CSS working group, 1/5 of CSSConf, a
+                percentage of JSConf (We all know how good JavaScript is at
+                numbers), a bower team member and a swag of other stupid
+                projects.
               </p>
             </div>
-          </section>
+          </div>
+
+          <div class="session nodeschool small">
+            <h2><a name="nodeschool-learnyounode" href="#nodeschool-learnyounode">Learnyounode</a> – Workshop</h2>
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/rvagg">
+                  <img src="https://avatars1.githubusercontent.com/u/495647?s=150"/>
+                </a>
+                <h3><a href="https://github.com/rvagg">Rod Vagg</a></h3>
+                <div class="links">
+                  <a href="https://github.com/rvagg" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/rvagg" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+
+              <div class="mentor">
+                <a href="https://github.com/timoxley">
+                  <img src="https://avatars1.githubusercontent.com/u/43438?s=150"/>
+                </a>
+                <h3><a href="https://github.com/timoxley">Tim Oxley</a></h3>
+                <div class="links">
+                  <a href="https://github.com/timoxley" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/secoif" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+
+              <div class="mentor">
+                <a href="https://github.com/SomeoneWeird">
+                  <img src="https://avatars0.githubusercontent.com/u/665754?s=150"/>
+                </a>
+                <h3><a href="https://github.com/SomeoneWeird">Adam Brady</a></h3>
+                <div class="links">
+                  <a href="https://github.com/SomeoneWeird" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/Adam__Brady" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+
+              <div class="mentor">
+                <a href="https://github.com/pomke">
+                  <img src="https://avatars2.githubusercontent.com/u/551374?s=150"/>
+                </a>
+                <h3><a href="https://github.com/pomke">Pomke Nohkan</a></h3>
+                <div class="links">
+                  <a href="https://github.com/pomke" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/pomke" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+
+              <div class="mentor">
+                <a href="https://github.com/deoxxa">
+                  <img src="https://1.gravatar.com/avatar/d27bae51ba163785869161126434ea56?d=https%3A%2F%2Fidenticons.github.com%2F83f849c6fe01025f8f08a6ad12d02eb2.png&r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/deoxxa">Conrad Pankoff</a></h3>
+                <div class="links">
+                  <a href="https://github.com/deoxxa" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/deoxxa" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+            </div>
+            <p>
+              A <a href="http://nodeschool.io">nodeschool.io</a> workshop that will teach you Node.js, starting at a
+              basic "HELLO WORLD" and moving on to more advanced exercises:
+              synchronous &amp; asynchronous I/O, filesystem
+              operations, TCP &amp; HTTP networking, events, streams and more.
+            </p>
+          </div>
+
+          <div class="session nodeschool small">
+            <h2><a name="nodeschool-streamadventure" href="#nodeschool-streamadventure">Stream Adventure</a> – Workshop</h2>
+
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/rvagg">
+                  <img src="https://avatars1.githubusercontent.com/u/495647?s=150"/>
+                </a>
+                <h3><a href="https://github.com/rvagg">Rod Vagg</a></h3>
+                <div class="links">
+                  <a href="https://github.com/rvagg" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/rvagg" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+
+              <div class="mentor">
+                <a href="https://github.com/timoxley">
+                  <img src="https://avatars1.githubusercontent.com/u/43438?s=150"/>
+                </a>
+                <h3><a href="https://github.com/timoxley">Tim Oxley</a></h3>
+                <div class="links">
+                  <a href="https://github.com/timoxley" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/secoif" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              A <a href="http://nodeschool.io">nodeschool.io</a> workshop that teaches you how to compose streaming interfaces with .pipe()!
+            </p>
+          </div>
+          <div class="session nodeschool small">
+            <h2><a name="nodeschool-bytewiser" href="#nodeschool-bytewiser">Bytewiser</a> – Workshop</h2>
+
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/rvagg">
+                  <img src="https://avatars1.githubusercontent.com/u/495647?s=150"/>
+                </a>
+                <h3><a href="https://github.com/rvagg">Rod Vagg</a></h3>
+                <div class="links">
+                  <a href="https://github.com/rvagg" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/rvagg" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/deoxxa">
+                  <img src="https://1.gravatar.com/avatar/d27bae51ba163785869161126434ea56?d=https%3A%2F%2Fidenticons.github.com%2F83f849c6fe01025f8f08a6ad12d02eb2.png&r=x&s=150"/>
+                </a>
+                <h3><a href="https://github.com/deoxxa">Conrad Pankoff</a></h3>
+                <div class="links">
+                  <a href="https://github.com/deoxxa" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/deoxxa" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              A <a href="http://nodeschool.io">nodeschool.io</a> workshop that teaches you the fundamentals of working with binary data in node.js and HTML5 browsers.
+            </p>
+          </div>
+
+          <div class="session nodeschool small">
+            <h2><a name="nodeschool-functional-javascript" href="#nodeschool-functional-javascript">Functional JavaScript</a> – Workshop</h2>
+
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/pomke">
+                  <img src="https://avatars2.githubusercontent.com/u/551374?s=150"/>
+                </a>
+                <h3><a href="https://github.com/pomke">Pomke Nohkan</a></h3>
+                <div class="links">
+                  <a href="https://github.com/pomke" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/pomke" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+              <div class="mentor">
+                <a href="https://github.com/timoxley">
+                  <img src="https://avatars1.githubusercontent.com/u/43438?s=150"/>
+                </a>
+                <h3><a href="https://github.com/timoxley">Tim Oxley</a></h3>
+                <div class="links">
+                  <a href="https://github.com/timoxley" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/secoif" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+            </div>
+            <p>
+              A <a href="http://nodeschool.io">nodeschool.io</a> workshop that teaching fundamental functional
+              programming features of Javascript. No libraries required (i.e.
+              no underscore), just ES5.
+            </p>
+            <p>
+              Many functional programming learning resources will teach you to
+              write functional code, but it's often highly indirect, deeply
+              abstracted, requires understanding complex relationships between
+              custom library calls, and doesn't represent the reality of how
+              people actually write JavaScript.
+            </p>
+            <p>
+              The goal of this workshop is to create realistic problems that
+              can be solved using terse, vanilla, idiomatic JavaScript.
+            </p>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -613,7 +1192,7 @@
             Want to send 3 or more developers to CampJS? Consider <a href="/sponsor.html">sponsoring CampJS</a> (help make CampJS better!) or <a href="http://tickets.campjs.com/">See ticketing for deals.</a>
           </p>
           </section>
-          <section>
+          <section >
           <h2>Sponsors</h2>
           <p>
             CampJS is looking for sponsors large and small. We are particularly
@@ -641,6 +1220,8 @@
           </section>
         </div>
       </div>
+
+
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <p>

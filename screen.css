@@ -461,3 +461,71 @@ body > .wrap {
 #sponsors .gold {
   margin-bottom: 3em;
 }
+
+.session h2 {
+  font-size: 150%;
+}
+
+.session {
+  border-bottom: 1px dotted #AAA;
+  clear: both;
+  float: left;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.session ul {
+  list-style-position: inside
+}
+
+.session .mentor {
+  float: right;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.session .mentors {
+  float: right;
+  width: 140px;
+  margin-left: 1em;
+}
+
+.session .links {
+  display: none;
+}
+
+.session .mentors .mentor {
+  float: right;
+  margin-bottom: 0.5em;
+}
+
+.session .mentors .mentor > a > img {
+  min-height: 60px;
+  width: 120px;
+  height: auto;
+}
+.session.small .mentors .mentor > a > img {
+  width: 75px;
+  height: auto;
+}
+
+.session .mentor  {
+  margin-left: 25px;
+  text-align: center;
+}
+
+.session.small .mentors {
+  width: auto;
+  margin-left: 0;
+  margin-right: 1em;
+  max-width: 350px;
+  float: right;
+}
+.session.nodebots .mentors {
+
+}
+.about-mentor {
+  padding-top: 1em;
+  font-size: smaller;
+  clear: both;
+}
