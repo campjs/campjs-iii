@@ -60,6 +60,13 @@
     <main class="container">
       <div class="row">
         <div class="col-sm-12 col-md-8 col-md-offset-2">
+          <p></p>
+          <iframe id="promo-video" src="//player.vimeo.com/video/92020119" width="100%" height="414px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p>This community-created video was built by <a href="http://twitter.com/theorm">Roman Kalyakin</a>, <a href="http://twitter.com/antulik">Anton Katunin</a> &amp; <a href="https://twitter.com/JaapRood">Jaap van Hardeveld</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
           <section id="tickets">
             <a id="buy-tickets" class="btn btn-lg btn-warning btn-block buy-tickets" href="http://tickets.campjs.com/">Get Tickets</a>
             <span style="text-align: center; font-size: smaller;">
@@ -316,6 +323,16 @@
               </div>
             </div>
             <div class="mentor col-md-4 col-sm-3 col-xs-6">
+              <a href="https://github.com/soareschen">
+                <img src="https://avatars0.githubusercontent.com/u/97665?s=150"/>
+              </a>
+              <h3><a href="https://github.com/soareschen">Soares Chen</a></h3>
+              <div class="links">
+                <a href="https://github.com/soareschen" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/soareschen" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <div class="mentor col-md-4 col-sm-3 col-xs-6">
               <a href="https://github.com/alexmackey">
                 <img src="https://avatars0.githubusercontent.com/u/144549?s=150"/>
               </a>
@@ -394,7 +411,7 @@
           <h3>CampJS Sponsors</h3>
           <section>
             <div class="gold row">
-              <a href="http://bomboratech.com.au/" class="col-md-12 bombora-logo"><img src="/sponsors/bombora.png"></a>
+              <a href="http://bomboratech.com.au/" class="col-md-12 bombora-logo"><img style="width: 260px;"src="/sponsors/bombora.jpg"></a>
             </div>
             <div class="gold row">
               <a href="https://segment.io/" class="col-md-12"><img class="segmentio-logo" src="/sponsors/segmentio-logo.jpg"></a>
@@ -459,6 +476,7 @@
             <li><a href="#thinking-in-components">Thinking in Components</a></li>
             <li><a href="#es6-workshop">ES6</a></li>
             <li><a href="#es6-generators">ES6 Generators</a></li>
+            <li><a href="#leveldb">LevelDB</a></li>
             <li><a href="#nodeos">Nodeos</a></li>
             <li><a href="#cad-cam-for-browser">A CAD→CAM solution for the Browser</a></li>
             <li><a href="#nodebots">NodeBots</a></li>
@@ -466,6 +484,7 @@
             <li><a href="#node-docker">Dropping Anchor</a></li>
             <li><a href="#webrtc-components">WebRTC & Web Components; match made in heaven</a></li>
             <li><a href="#bem">BEM for JS</a></li>
+            <li><a href="#quiver">Quiver.js - A New Server Side Component Architecture</a></li>
             <li><a href="#intro-to-webgl">Intro to WebGL with three.js</a></li>
             <li><a href="#webpack">Packaging CommonJS for the browser: Webpack and Browserify</a></li>
             <li><a href="#makehaste">Make Haste: Fast Track to Functional Thinking</a></li>
@@ -476,6 +495,7 @@
             <li><a href="#nodeschool-bytewiser">Bytewiser</a></li>
             <li><a href="#nodeschool-functional-javascript">Functional JavaScript</a></li>
             <li><a href="#firefoxos-homescreen">Firefox OS Homescreen hacking</a></li>
+            <li><a href="#atom-editor">Extending Atom editor</a></li>
           </ul>
           <h4>More to be announced...</h4>
 
@@ -590,6 +610,37 @@
               </p>
             </div>
           </div>
+
+          <div class="session">
+            <h2><a name="leveldb" href="#leveldb">LevelDB</a> – Workshop</h2>
+            <div class="mentor">
+              <a href="https://github.com/hij1nx">
+                <img src="https://avatars0.githubusercontent.com/u/136109?r=x&s=400"/>
+              </a>
+              <h3><a href="https://github.com/hij1nx">Paolo Fragomeni</a></h3>
+              <div class="links">
+                <a href="https://github.com/hij1nx" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/hij1nx" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <p>
+              Databases have traditionally been a black box. Most people don't understand
+              how they work entirely, making them difficult to extend or integrate with 
+              confidence. Why not try a more Node.js-like solution to the problem of data 
+              persistence? A solution where you start with a simple kernel and add or create 
+              small modules that facilitate *your* particular problem! Let's take a deep dive 
+              into the world of LevelDB! Let's examine how you can liberate yourself from 
+              feature bloated, highly monolithic, black-box databases without losing any value.
+            </p>
+            <div class="about-mentor">
+              <h4>Paolo Fragomeni</h4>
+              <p>
+                I like to build products. Currently I'm CTO at Mic Network, a futuristic news 
+                company, from the future.
+              </p>
+            </div>
+          </div>
+
           <div class="session">
             <h2><a name="generators" href="#es6-generators">ES6 Generators</a> – Workshop</h2>
             <div class="mentor">
@@ -950,6 +1001,35 @@
           </div>
 
           <div class="session">
+            <h2><a name="quiver" href="#quiver">Quiver.js - A New Server Side Component Architecture</a> – Talk</h2>
+            <div class="mentor">
+              <a href="https://github.com/soareschen">
+                <img src="https://avatars0.githubusercontent.com/u/97665?s=150"/>
+              </a>
+              <h3><a href="https://github.com/soareschen">Soares Chen</a></h3>
+              <div class="links">
+                <a href="https://github.com/soareschen" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                <a href="https://twitter.com/soareschen" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+              </div>
+            </div>
+            <p>
+              Quiver.js introduce a new kind of programming paradigm for writing modular server-side applications. Instead of writing monolithic applications using OOP, Quiver allow code to be organized as functions together with JSON-like component definitions.
+            </p>
+            <p>
+              One of the basic building blocks in Quiver is stream handler - a function that accepts a stream-like object and asynchronously returns a result stream-like object. Together there are six layers of such abstractions that makes Quiver stand out as a modular and robust architecture.
+            </p>
+            <p>
+              In this talk I will present a short demo to give a quick overview of the concepts behind Quiver.
+            </p>
+            <div class="about-mentor">
+              <h4>Soares Chen</h4>
+              <p>
+                Soares is a self-taught Node developer and have been doing software back-end development for ten years. He is from Malaysia and have previously worked in Stockholm to develop the back-end system of <a href="http://scorecloud.com/">ScoreCloud.</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="session">
             <h2><a name="intro-to-webgl" href="#intro-to-webgl">Intro to WebGL with three.js</a> – Workshop</h2>
 
             <div class="mentors">
@@ -1028,7 +1108,7 @@
             </div>
           </div>
 
-         <div class="session">
+          <div class="session">
             <h2><a name="makehaste" href="#makehaste">Make Haste: Fast Track to Functional Thinking</a> – Talk</h2>
             <div class="mentor">
               <a href="https://github.com/codemiller">
@@ -1041,22 +1121,22 @@
               </div>
             </div>
             <p>
-                  It has often been said that Haskell is a fantastic playground for learning functional programming concepts that can 
-                  then be applied in other arenas. This is true, but it does not mean the purely functional language cannot be used for practical tasks. 
-                  For example, you can create web applications in Haskell; this presentation will explain how. It will step through a simple web 
-                  app running in the cloud that has been coded entirely with Haskell -- this includes the server-side code, the HTML and CSS, and 
-                  yes, even the JavaScript, which will be generated with the Haste compiler. Katie will discuss the merits of this approach and what JavaScript 
-                  programmers can learn from Haskell.         
+                  It has often been said that Haskell is a fantastic playground for learning functional programming concepts that can
+                  then be applied in other arenas. This is true, but it does not mean the purely functional language cannot be used for practical tasks.
+                  For example, you can create web applications in Haskell; this presentation will explain how. It will step through a simple web
+                  app running in the cloud that has been coded entirely with Haskell -- this includes the server-side code, the HTML and CSS, and
+                  yes, even the JavaScript, which will be generated with the Haste compiler. Katie will discuss the merits of this approach and what JavaScript
+                  programmers can learn from Haskell.
             </p>
             <div class="about-mentor">
               <h4>Katie Miller</h4>
               <p>
-                  Katie Miller, also known as <a href="http://www.codemiller.com">codemiller</a>, is a polyglot programmer with a 
-                  penchant for Haskell. The former newspaper journalist works as an <a href="http://www.openshift.com">OpenShift</a> 
-                  Developer Advocate at <a href="http://redhat.com"> Red Hat</a> and co-authored the new O'Reilly book 
-                  <a href="http://www.openshift.com/ebook">Getting Started with OpenShift.</a> Katie co-founded the 
+                  Katie Miller, also known as <a href="http://www.codemiller.com">codemiller</a>, is a polyglot programmer with a
+                  penchant for Haskell. The former newspaper journalist works as an <a href="http://www.openshift.com">OpenShift</a>
+                  Developer Advocate at <a href="http://redhat.com"> Red Hat</a> and co-authored the new O'Reilly book
+                  <a href="http://www.openshift.com/ebook">Getting Started with OpenShift.</a> Katie co-founded the
                   <a href="http://www.lambdaladies.com">Lambda Ladies</a> group for women in functional programming and is a co-organiser
-                  of the <a href="http://bfpg.org">Brisbane Functional Programming Group</a>. Katie is passionate about coding, open source, 
+                  of the <a href="http://bfpg.org">Brisbane Functional Programming Group</a>. Katie is passionate about coding, open source,
                   software quality, languages of all kinds, and encouraging more girls and women to pursue careers in technology.
               </p>
             </div>
@@ -1241,6 +1321,7 @@
               A <a href="http://nodeschool.io">nodeschool.io</a> workshop that teaches you how to compose streaming interfaces with .pipe()!
             </p>
           </div>
+
           <div class="session nodeschool small">
             <h2><a name="nodeschool-bytewiser" href="#nodeschool-bytewiser">Bytewiser</a> – Workshop</h2>
 
@@ -1352,6 +1433,38 @@
           </div>
 
           <div class="session small">
+            <h2><a name="atom-editor">Extending Atom editor</a> – Workshop</h2>
+            <div class="mentors">
+              <div class="mentor">
+                <a href="https://github.com/sidorares">
+                  <img src="https://avatars0.githubusercontent.com/u/173025?s=150"/>
+                </a>
+                <h3><a href="https://github.com/sidorares">Andrey Sidorov</a></h3>
+                <div class="links">
+                  <a href="https://github.com/pauljt" title="GitHub"><img src="images/glyphicons_social_21_github.png"/></a>
+                  <a href="https://twitter.com/sidorares" title="Twitter"><img src="images/glyphicons_social_31_twitter.png"/></a>
+                </div>
+              </div>
+            </div>
+            <p>
+              Introduction to developing <a href="https://atom.io/">Atom</a> editor plugins using javascript, coffescript and node.js packages.
+              We'll discuss what people are alredy doing with Atom, learn plugins <a href="https://atom.io/docs/api/v0.89.0/api/">api</a>
+              and hack on our own plugins from simple ones like color editor to full featured debugger connecting to Webkit and node.js debugging agents.
+            </p>
+            <div class="about-mentor">
+              <h4>Andrey Sidorov</h4>
+              <p>
+                 Andrey Sidorov is software developer from Melbourne, Australia.
+                 Andrey enjoys implementing low-level network protocols in javascript.
+                 Among his side projects are clients for d-bus, x11, mysql, vnc, memcached,
+                 i3-rpc and ADB protocols. His pre-web and pre-javascript background is programing
+                 numerical calculations and computational geometry for CAD/CAM systems in C++.
+                 He runs monthly <a href='http://meetup.com/MelbNodeJS/'>Melbourne Node.JS meetup</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="session small">
             <h2><a name="keystonejs-mongodb" href="#keystonejs-mongodb">Choose-your-own Appventure with KeystoneJS &amp; MongoDB</a> – Workshop</h2>
             <div class="mentors">
               <div class="mentor">
@@ -1390,7 +1503,7 @@
             <div class="about-mentor">
               <h4>Jed Watson</h4>
               <p>
-                Jed (@jedwatson) is a partner at Thinkmill, a group of web / app devs in Sydney who love open source, Javascript, and amazing UX. He’s been been a full stack web developer since IE6 was cool, and recently has loved building all the things with node.js. Jed leads the KeystoneJS project and is thoroughly enjoying being part of open source and the Javascript community.
+                Jed (@jedwatson) is a partner at Thinkmill, a group of web / app devs in Sydney who love open source, Javascript, and amazing UX. He’s been been a full stack web developer since IE6 was cool, and loves building all the things with node.js. Jed leads the KeystoneJS project and is thoroughly enjoying being part of open source and the Javascript community.
               </p>
             </div>
             <div class="about-mentor">
@@ -1416,7 +1529,7 @@
             want.
             </p>
             <p>
-              <img src="images/hacking-outside.jpg"/>
+              <img src="images/hacking-outside.jpg" />
             </p>
             <p>
             On the final evening, everyone is given the opportunity to show off
