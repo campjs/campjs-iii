@@ -115,6 +115,10 @@ body {
   font-size: 170%;
   color: rgb(46,43,37);
   background-color: #EDF5F7;
+  background-image: url('images/background.svg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   font-family: "Myriad Pro", Myriad, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
