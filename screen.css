@@ -533,3 +533,9 @@ body > .wrap {
   font-size: smaller;
   clear: both;
 }
+
+@media (max-width: 420px) {
+  .col-xs-6 {
+    width: 100%;
+  }
+}
